@@ -1,31 +1,146 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>你的訪問權限 — 蛻變日記</title>
+<title>蛻變日記 — 30 天藝術治療練習</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  html, body { margin:0; background:#FAF7F2; color:#2B2522; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans TC",sans-serif; }
-  .wrap { max-width:560px; margin:0 auto; padding:64px 20px; text-align:center; }
-  .badge { display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; background:#EFE6DA; padding:6px 12px; border-radius:99px; }
-  h1 { font-size:28px; line-height:1.3; margin:18px 0 10px; }
-  p { font-size:17px; line-height:1.55; color:#5B514B; }
-  .card { background:#fff; border:1px solid #EAE0D5; border-radius:16px; padding:24px 20px; margin-top:28px; }
-  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:#1F9D55; margin-right:8px; animation:pulse 1.6s infinite; }
-  @keyframes pulse { 50% { opacity:.3; } }
-  @media (prefers-reduced-motion: reduce) { .dot { animation:none; } }
+@page { size: 210mm 297mm; margin: 0; }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root { --bg:#FFF8F4;--lav:#D9C9F7;--lavd:#B89FE0;--pink:#F3B8D2;--gold:#C9A84C;--title:#4E4036;--body:#6F6258;--body2:#8A7A70;--ft:'Noto Serif TC',serif;--fb:'Noto Sans TC',sans-serif; }
+body { font-family:var(--fb); color:var(--body); background:var(--bg); }
+.page { width:210mm; min-height:297mm; position:relative; page-break-after:always; overflow:hidden; display:flex; flex-direction:column; }
+.cover { background:linear-gradient(145deg,#4E4036 0%,#8A7A70 50%,#C9A84C 100%); align-items:center; justify-content:center; text-align:center; padding:36mm 20mm; }
+.cover-badge { display:inline-block; background:rgba(201,168,76,.25); border:1px solid var(--gold); color:var(--gold); font-size:9pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:5px 18px; border-radius:20px; margin-bottom:20px; }
+.cover h1 { font-family:var(--ft); font-size:30pt; color:#fff; line-height:1.2; margin-bottom:12px; }
+.cover p { font-size:11pt; color:rgba(255,255,255,.85); margin-bottom:24px; line-height:1.5; }
+.cover-pill { display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.4); color:#fff; padding:7px 20px; border-radius:24px; font-size:9pt; font-weight:600; margin:3px; }
+.guide-page { background:#fff; padding:16mm 18mm; }
+.guide-h2 { font-family:var(--ft); font-size:20pt; color:var(--title); margin-bottom:6mm; padding-bottom:4mm; border-bottom:2px solid var(--lav); }
+.guide-p { font-size:10pt; color:var(--body); line-height:1.65; margin-bottom:3mm; }
+.guide-ul { list-style:none; display:flex; flex-direction:column; gap:3mm; margin:4mm 0; }
+.guide-ul li { font-size:10pt; color:var(--body); line-height:1.5; padding-left:16px; position:relative; }
+.guide-ul li::before { content:"✦"; position:absolute; left:0; color:var(--lavd); font-size:8pt; top:2px; }
+.week-header { background:linear-gradient(135deg,#4E4036,#6F6258); padding:10mm 18mm; display:flex; align-items:center; gap:14px; }
+.week-num { width:46px; height:46px; border:2px solid var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:var(--ft); font-size:15pt; color:var(--gold); flex-shrink:0; }
+.week-info h2 { font-family:var(--ft); font-size:20pt; color:#fff; }
+.week-info p { font-size:9pt; color:rgba(255,255,255,.75); margin-top:3px; }
+.day-page { background:#fff; padding:12mm 18mm; }
+.day-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:5mm; padding-bottom:3mm; border-bottom:2px solid var(--lav); }
+.day-num { font-size:8pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); }
+.day-week { font-size:8pt; color:var(--body2); }
+.day-title { font-family:var(--ft); font-size:17pt; color:var(--title); margin-bottom:3mm; line-height:1.3; }
+.day-prompt { background:linear-gradient(135deg,#f5f0e8,#f0ebff); border-radius:8px; padding:8px 12px; margin-bottom:4mm; }
+.day-prompt-label { font-size:8pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin-bottom:3px; }
+.day-prompt p { font-size:10pt; color:var(--title); line-height:1.55; font-style:italic; }
+.day-guidance { margin-bottom:3mm; }
+.day-guidance p { font-size:9.5pt; color:var(--body); line-height:1.6; }
+.day-space { flex:1; border:1.5px dashed #d9c9f7; border-radius:8px; min-height:60mm; }
+.day-reflection { margin-top:3mm; border-top:1px solid var(--lav); padding-top:3mm; display:flex; gap:8px; align-items:flex-start; }
+.day-reflection-label { font-size:8pt; font-weight:700; color:var(--gold); flex-shrink:0; }
+.day-reflection p { font-size:9pt; color:var(--body2); line-height:1.5; font-style:italic; }
+@media print { .no-print { display:none!important; } .page { page-break-after:always; } }
+@media screen { body { background:#e0d8d0; padding:20px; } .page { margin:0 auto 20px; box-shadow:0 4px 20px rgba(0,0,0,.2); } .print-btn { position:fixed; bottom:24px; right:24px; background:#4E4036; color:var(--gold); border:none; border-radius:50px; padding:14px 28px; font-size:14px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(78,64,54,.5); z-index:1000; } }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <span class="badge">購買已確認</span>
-    <h1>蛻變日記 — 30天情緒練習引導日記</h1>
-    <p>謝謝你！我們正在準備你的所有資料。這個頁面很快就會更新，包含你的文件。</p>
-    <div class="card">
-      <p><span class="dot"></span><strong>請保存這個連結</strong></p>
-      <p>這是你終身訪問的連結。請在幾小時內回來，你將找到你購買的產品。</p>
-    </div>
+<button class="print-btn no-print" onclick="window.print()">🖨️ 列印 / 儲存 PDF</button>
+<div class="page cover">
+  <div class="cover-badge">🌙 升級版 · OTO</div>
+  <h1>蛻變日記</h1>
+  <p>30 天藝術治療練習計畫<br>每天一個練習，30 天徹底轉化</p>
+  <div>
+    <span class="cover-pill">📅 30 天</span>
+    <span class="cover-pill">🎨 每日練習</span>
+    <span class="cover-pill">🌙 蛻變之旅</span>
   </div>
+</div>
+
+<div class="page guide-page">
+  <div class="guide-h2">如何使用蛻變日記</div>
+  <p class="guide-p">蛻變日記是一個結構化的 30 天旅程，幫助你每天用藝術治療練習深化自我了解。每一天都有特定的主題和練習，配合每週的核心意圖。</p>
+  <p class="guide-p">研究表明，每天 15-20 分鐘的有意識創意活動，在 30 天後能產生可量測的情感健康改善。這不是關於藝術技巧，而是關於誠實地探索自己的內心。</p>
+  <p class="guide-p" style="font-weight:600;color:var(--title);">四週的結構：</p>
+  <ul class="guide-ul">
+    <li><strong>第一週 — 覺知：</strong>看見你是誰，你在哪裡</li>
+    <li><strong>第二週 — 探索：</strong>深入你的情感世界</li>
+    <li><strong>第三週 — 整合：</strong>連結你的過去和未來</li>
+    <li><strong>第四週 — 蛻變：</strong>成為你想成為的人</li>
+  </ul>
+  <p class="guide-p" style="font-weight:600;color:var(--title);margin-top:4mm;">提示：</p>
+  <ul class="guide-ul">
+    <li>每天在同一時間練習——早晨效果最好</li>
+    <li>不要評判你的藝術——過程比結果重要</li>
+    <li>如果你錯過了一天，就繼續，不要試圖補上</li>
+    <li>在日記最後寫下你整個旅程中的三個最大洞察</li>
+  </ul>
+</div>
+
+<div id="journal-container"></div>
+<script>
+var weeks = [
+  { num:1, title:"第一週 — 覺知", desc:"看見你是誰，你在哪裡", days:[
+    {d:1,title:"我今天在哪裡",prompt:"畫出你此刻的情感位置——不是地理位置，而是你內心的「地點」。",guidance:"不要思考太多，讓你的手自動移動。用顏色、形狀和線條表達，不必是具體的圖像。",refl:"這幅畫告訴你什麼關於你今天的真實狀態？"},
+    {d:2,title:"我的日常面具",prompt:"畫出你每天早晨「戴上」的面具——你向世界展示的臉。",guidance:"那個面具是什麼顏色？它有什麼表情？它感覺輕還是重？",refl:"面具之下的你和面具上的你有多不同？"},
+    {d:3,title:"能量的來源",prompt:"畫出讓你充滿能量的三件事（人、地方或活動）。",guidance:"用鮮豔的顏色和活躍的線條表達那種能量感。",refl:"你是否給了這些能量來源足夠的時間？"},
+    {d:4,title:"能量的漏洞",prompt:"畫出在你的「容器」上，能量流失的地方。",guidance:"你的容器（你自己）可以是任何形狀。漏洞在哪裡？",refl:"你可以修補哪一個漏洞？"},
+    {d:5,title:"我的核心",prompt:"在頁面中央，畫出你最核心、最真實的自我。",guidance:"在那個核心周圍，畫出保護它或遮蔽它的層層外殼。",refl:"你的核心需要什麼才能更完整地表達自己？"},
+    {d:6,title:"感恩的顏色",prompt:"為今天你感激的五件事，各選一種顏色，畫出五個色塊。",guidance:"每個色塊的大小代表你的感激程度。",refl:"看著這些顏色，你感受到什麼？"},
+    {d:7,title:"第一週的總結",prompt:"不用語言，以視覺形式描述這一週你最大的洞察。",guidance:"可以是一個象徵符號、一幅風景或任何對你有意義的圖像。",refl:"這一週你學到了什麼關於自己的事？"}
+  ]},
+  { num:2, title:"第二週 — 探索", desc:"深入你的情感世界", days:[
+    {d:8,title:"恐懼的形狀",prompt:"給你最大的恐懼一個視覺形式——形狀、顏色、質感。",guidance:"讓它存在於紙上，不要試圖讓它變小或消失。",refl:"當你看著你的恐懼的形狀時，它感覺多大？"},
+    {d:9,title:"憤怒的顏色",prompt:"用你想要的力道，用憤怒的顏色填滿整張紙。",guidance:"這是關於釋放，不是關於美麗。用力。",refl:"畫完後，你感覺如何？憤怒的能量還在哪裡？"},
+    {d:10,title:"悲傷的家",prompt:"畫出悲傷在你身體裡居住的地方。",guidance:"那個地方是溫暖的還是寒冷的？空曠的還是擁擠的？",refl:"那個悲傷需要什麼照料？"},
+    {d:11,title:"喜悅的地圖",prompt:"畫出你生命中的「喜悅地帶」——讓你感到真正快樂的地方。",guidance:"那些地方的顏色和光線是什麼樣的？",refl:"你最近多常拜訪你的喜悅地帶？"},
+    {d:12,title:"愛的形式",prompt:"畫出你給予和接受愛的方式。",guidance:"愛可以有不同的形狀——保護、陪伴、鼓勵、接觸。你的愛是什麼形狀？",refl:"你在給予和接受愛上，哪個更容易？"},
+    {d:13,title:"未表達的情感",prompt:"畫出你從未對任何人表達過的情感。",guidance:"那個情感可以沒有語言，只有顏色和形狀。",refl:"為什麼那個情感還沒被表達？"},
+    {d:14,title:"情感的全貌",prompt:"畫出你完整的情感世界——所有你這週探索的情感。",guidance:"讓所有情感都有空間，沒有任何情感比另一個更有價值。",refl:"看著你完整的情感世界，你有什麼感受？"}
+  ]},
+  { num:3, title:"第三週 — 整合", desc:"連結你的過去和未來", days:[
+    {d:15,title:"過去的傷",prompt:"畫出你還帶著的一個過去的傷。",guidance:"不要重複創傷——讓這幅畫代表那個傷，而不是重演它。",refl:"那個傷今天還在影響你什麼？"},
+    {d:16,title:"愈合的過程",prompt:"畫出一個你已經愈合的傷，以及愈合後留下的東西。",guidance:"瘢痕也是力量的象徵——它代表你生存下來了。",refl:"那個愈合的傷教了你什麼？"},
+    {d:17,title:"給過去的信",prompt:"以視覺形式，「寫」一封信給你的過去的自己。",guidance:"你想告訴那個年輕的你什麼？用符號、顏色和形狀。",refl:"如果那個年輕的你看到你今天的樣子，它會感受到什麼？"},
+    {d:18,title:"家族的遺產",prompt:"畫出你從家族繼承的東西——包括禮物和負擔。",guidance:"那些遺產有的給了你翅膀，有的給了你枷鎖。哪些是哪些？",refl:"你想從家族遺產中保留什麼？放下什麼？"},
+    {d:19,title:"我想要的未來",prompt:"畫出五年後你最希望的生活是什麼樣子。",guidance:"不是你認為「應該」有的，而是你真正渴望的。",refl:"那幅未來景象讓你感到興奮還是恐懼？"},
+    {d:20,title:"橋接過去和未來",prompt:"畫出連接今天的你和你夢想的未來之間的橋。",guidance:"那座橋是什麼材料做的？什麼支撐著它？",refl:"站在橋上，前進的第一步是什麼？"},
+    {d:21,title:"整合的象徵",prompt:"創造一個象徵符號，代表你過去、現在和未來的整合。",guidance:"那個符號代表你整個人——全部的你，所有的層次。",refl:"你願意把那個象徵符號帶到你的日常生活中嗎？"}
+  ]},
+  { num:4, title:"第四週 — 蛻變", desc:"成為你想成為的人", days:[
+    {d:22,title:"我想成為誰",prompt:"畫出「蛻變後的我」——你最真實、最充實的版本。",guidance:"不要想「可能或不可能」——只想「如果」。",refl:"那個「蛻變後的你」和今天的你有什麼不同？"},
+    {d:23,title:"阻礙的石頭",prompt:"畫出站在你和你夢想的自己之間的阻礙。",guidance:"那些阻礙是外部的還是內部的？真實的還是你相信它們是真實的？",refl:"哪一個阻礙是你今天可以開始移動的？"},
+    {d:24,title:"我的超能力",prompt:"畫出你真正的「超能力」——你最獨特的力量和才能。",guidance:"不要謙虛。那些力量是真實的，即使你有時忘記它們。",refl:"你是否充分使用了你的超能力？"},
+    {d:25,title:"我的信念系統",prompt:"畫出支撐你生命的信念——什麼是真實的，什麼是重要的。",guidance:"那些信念是你自己選擇的，還是從別人那裡繼承的？",refl:"你想更新或修正哪一個信念？"},
+    {d:26,title:"給未來的禮物",prompt:"畫出你想給未來的自己的一個禮物。",guidance:"那個禮物可以是一個習慣、一種心態、一個承諾或一個許可。",refl:"你今天可以開始給自己那個禮物嗎？"},
+    {d:27,title:"我的遺產",prompt:"畫出你想留給世界的東西——你的遺產或痕跡。",guidance:"那個遺產不必是偉大的。即使只是你影響過的一個人，也是完整的遺產。",refl:"你每天的行動是否在建設那個遺產？"},
+    {d:28,title:"蛻變的感謝",prompt:"以視覺形式，感謝讓你成為今天的你的一切——包括困難和黑暗。",guidance:"每一個困難都在某種程度上讓你變得更強壯或更有智慧。",refl:"你可以感謝你最困難的經歷嗎？"},
+    {d:29,title:"我是誰",prompt:"30 天後，畫出你的自畫像——真實而完整的你。",guidance:"讓這幅自畫像包括所有你在這個旅程中看到的面向。",refl:"這幅自畫像和第一天的你相比，有什麼不同？"},
+    {d:30,title:"蛻變已發生",prompt:"創作你的「蛻變宣言」——以視覺形式，宣告你是誰，你將如何前進。",guidance:"這是你 30 天旅程的頂峰。讓這幅畫充滿尊嚴、力量和希望。",refl:"30 天前的你，有沒有想到今天的你會是這樣？"}
+  ]}
+];
+var C = document.getElementById('journal-container');
+weeks.forEach(function(W) {
+  var wh = document.createElement('div');
+  wh.className = 'page';
+  wh.style.cssText = 'background:linear-gradient(135deg,#4E4036,#6F6258);justify-content:center;align-items:center;text-align:center;padding:30mm 20mm;';
+  wh.innerHTML = '<div style="border:2px solid var(--gold);border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-family:var(--ft);font-size:18pt;color:var(--gold);margin:0 auto 16px;">'+W.num+'</div>'
+    + '<h2 style="font-family:var(--ft);font-size:26pt;color:#fff;margin-bottom:8px;">'+W.title+'</h2>'
+    + '<p style="font-size:11pt;color:rgba(255,255,255,.75);">'+W.desc+'</p>';
+  C.appendChild(wh);
+  W.days.forEach(function(day) {
+    var pg = document.createElement('div');
+    pg.className = 'page day-page';
+    pg.innerHTML = '<div class="day-header"><span class="day-num">第 '+day.d+' 天</span><span class="day-week">'+W.title+'</span></div>'
+      + '<div class="day-title">'+day.title+'</div>'
+      + '<div class="day-prompt"><div class="day-prompt-label">🎨 今日練習</div><p>'+day.prompt+'</p></div>'
+      + '<div class="day-guidance"><p>'+day.guidance+'</p></div>'
+      + '<div class="day-space"></div>'
+      + '<div class="day-reflection"><span class="day-reflection-label">💭</span><p>'+day.refl+'</p></div>';
+    C.appendChild(pg);
+  });
+});
+</script>
 </body>
 </html>

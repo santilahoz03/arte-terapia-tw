@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>贈品 2 — 20 個自我價值練習</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@page { size: 210mm 297mm; margin: 0; }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root { --lav:#D9C9F7;--lavd:#B89FE0;--pink:#F3B8D2;--title:#4E4036;--body:#6F6258;--body2:#8A7A70;--ft:'Noto Serif TC',serif;--fb:'Noto Sans TC',sans-serif; }
+body { font-family:var(--fb); color:var(--body); background:#FFF8F4; }
+.page { width:210mm; min-height:297mm; position:relative; page-break-after:always; overflow:hidden; display:flex; flex-direction:column; }
+.cover { background:linear-gradient(160deg,#D9C9F7 0%,#F3B8D2 50%,#FFF8F4 100%); align-items:center; justify-content:center; text-align:center; padding:40mm 20mm; }
+.cover-badge { font-size:9pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--lavd); background:rgba(255,255,255,.65); padding:5px 18px; border-radius:20px; display:inline-block; margin-bottom:20px; }
+.cover h1 { font-family:var(--ft); font-size:28pt; color:var(--title); line-height:1.3; margin-bottom:12px; }
+.cover p { font-size:11pt; color:var(--body); margin-bottom:24px; line-height:1.5; }
+.cover-pill { display:inline-block; background:var(--title); color:#fff; padding:7px 20px; border-radius:24px; font-size:9pt; font-weight:600; margin:3px; }
+.ex-page { background:#fff; padding:14mm 18mm; }
+.ex-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6mm; padding-bottom:4mm; border-bottom:2px solid var(--lav); }
+.ex-topic { font-size:8pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--lavd); }
+.ex-num { font-size:8pt; color:var(--body2); }
+.ex-title { font-family:var(--ft); font-size:17pt; color:var(--title); margin-bottom:4mm; line-height:1.3; }
+.ex-mat { background:#f9f4ff; border-radius:8px; padding:6px 10px; margin-bottom:5mm; font-size:9pt; color:var(--body2); }
+.ex-mat strong { color:var(--lavd); }
+.ex-steps { display:flex; flex-direction:column; gap:3mm; margin-bottom:5mm; }
+.ex-step { display:flex; gap:10px; align-items:flex-start; }
+.ex-step-n { width:20px; height:20px; background:linear-gradient(135deg,var(--lav),var(--pink)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:8pt; font-weight:700; color:var(--title); flex-shrink:0; margin-top:1px; }
+.ex-step p { font-size:10pt; color:var(--body); line-height:1.55; }
+.ex-space { flex:1; border:1.5px dashed #d9c9f7; border-radius:8px; margin:3mm 0; min-height:60mm; }
+.ex-refl { background:linear-gradient(135deg,#fef3f8,#f0ebff); border-radius:8px; padding:8px 12px; }
+.ex-refl-label { font-size:8pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--lavd); margin-bottom:3px; }
+.ex-refl p { font-size:10pt; color:var(--title); font-style:italic; line-height:1.5; }
+@media print { .no-print { display:none!important; } }
+@media screen { body { background:#e0d8d0; padding:20px; } .page { margin:0 auto 20px; box-shadow:0 4px 20px rgba(0,0,0,.2); } .print-btn { position:fixed; bottom:24px; right:24px; background:var(--lavd); color:#fff; border:none; border-radius:50px; padding:14px 28px; font-size:14px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(184,159,224,.5); z-index:1000; } }
+</style>
+</head>
+<body>
+<button class="print-btn no-print" onclick="window.print()">🖨️ 列印 / 儲存 PDF</button>
+<div class="page cover">
+  <div class="cover-badge">🎁 贈品 2 · 藝術治療手冊</div>
+  <h1>20 個自我價值練習</h1>
+  <p>專門針對自我肯定：力量來源、自我守護者、優勢之樹等</p>
+  <div>
+    <span class="cover-pill">💜 20 個練習</span>
+    <span class="cover-pill">📖 可列印 PDF</span>
+    <span class="cover-pill">⭐ 內在成長</span>
+  </div>
+</div>
+<div id="container"></div>
+<script>
+var exs = [
+  {title:"力量來源地圖",mat:"紙張，彩色鉛筆",steps:["在頁面中央畫一個圓圈，寫下「我的力量」。","畫出通向不同力量來源的線條（人、地方、活動、價值觀）。","為每個力量來源添加一個象徵圖標。"],refl:"哪個力量來源在困難時刻最能支撐你？"},
+  {title:"自我守護者肖像",mat:"紙張，彩色鉛筆",steps:["想像你的「內在守護者」——保護你的那個部分。","畫出那個守護者（它可以是人、動物或神話生物）。","在旁邊寫下它的超能力是什麼。"],refl:"你最需要守護者保護你免受什麼傷害？"},
+  {title:"優勢之樹",mat:"紙張，棕色和綠色鉛筆",steps:["畫一棵大樹。","根部：你的力量和特質的根源（家庭、經歷、天賦）。","樹幹：你今天的核心優勢。","樹枝：這些優勢如何在生活中開花結果。"],refl:"你最驕傲的「樹枝」是哪一個？"},
+  {title:"讚美卡",mat:"小紙張，彩色鉛筆",steps:["創作 5 張讚美卡。","每張卡片：為自己寫一個真誠的讚美（具體且真實）。","用彩色鉛筆裝飾每張卡片。"],refl:"哪個讚美最難寫，但你知道是真實的？"},
+  {title:"我的超能力",mat:"紙張，鉛筆",steps:["思考你在童年時期「做得很好」的事情。","那個技能如何演變成今天的超能力？","以視覺形式呈現那個超能力。"],refl:"你的「超能力」如何為他人服務？"},
+  {title:"身體智慧",mat:"紙張，彩色鉛筆",steps:["畫出你身體的輪廓。","在每個部位標記：這個部位在生活中如何為你服務？","使用積極感恩的顏色。"],refl:"你最難感激自己身體的哪個部分？是什麼讓它難以感激？"},
+  {title:"成就牆",mat:"大張紙，鉛筆",steps:["在頁面上創建你的「成就牆」。","包括大型和小型成就——也包括你克服的挑戰。","讓它看起來像你的個人展覽。"],refl:"看著這堵牆，哪個成就讓你最驚訝？"},
+  {title:"「我足夠」宣言",mat:"紙張，彩色鉛筆",steps:["在頁面中央寫下「我足夠，因為…」。","完成 10 個句子——具體、真實、個人。","用你最喜歡的顏色裝飾每個句子。"],refl:"哪個「因為」最能讓你感受到足夠？"},
+  {title:"與批評者和解",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出你的內在批評者（它的形狀、外觀）。","用另一種顏色：給批評者寫一封簡短的信：感謝它保護你，但告訴它你不再需要那種保護。"],refl:"批評者最深的恐懼是什麼——它試圖保護你免受什麼傷害？"},
+  {title:"情感恢復力時間軸",mat:"紙張，鉛筆",steps:["畫出你生命中克服過的 5-7 個挑戰。","標記每個困難之後你變得更強大的方式。","讓這些連接成你的恢復力故事。"],refl:"在克服這些困難時，你始終保有什麼內在資源？"},
+  {title:"同情自我練習",mat:"紙張，溫暖顏色鉛筆",steps:["想想你正在掙扎的事情。","以你想要對最好的朋友說話的方式，給自己寫一封信。","用溫暖的顏色視覺化那些話語。"],refl:"為什麼給最好的朋友提供同情比給自己容易得多？"},
+  {title:"我的核心價值觀",mat:"紙張，彩色鉛筆",steps:["思考什麼對你最重要（誠實、家庭、自由、成長…）。","為每個核心價值觀畫一個象徵符號。","用對你最重要的顏色著色。"],refl:"哪個價值觀在你的日常生活中體現得最多？哪個最少？"},
+  {title:"我的榜樣",mat:"紙張，鉛筆",steps:["想想你欽佩的人——真實或虛構的。","那個人具有什麼你欣賞的特質？","意識到：你欽佩的正是你自己也擁有的。"],refl:"你欽佩的特質如何體現在你自己的生活中？"},
+  {title:"拒絕完美主義",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出完美主義如何阻止你（你錯過了什麼？）。","用另一種顏色：畫出「足夠好」看起來是什麼樣子。","觀察兩者之間的差異有多小。"],refl:"「足夠好」的哪個方面最能解放你？"},
+  {title:"我的貢獻",mat:"紙張，鉛筆",steps:["思考你對他人生活的積極影響——無論大小。","以視覺形式呈現每個貢獻（形狀、顏色、象徵）。","讓這幅畫成為你影響力的記錄。"],refl:"哪個貢獻對你最有意義？"},
+  {title:"愛的語言",mat:"紙張，彩色鉛筆",steps:["想想你最喜歡的接受愛的方式（言語肯定、質量時間、禮物、服務、身體接觸）。","以視覺形式呈現那種愛的語言。","在旁邊：誰能以那種方式給予你愛？"],refl:"你最難向自己表達愛的語言是什麼？"},
+  {title:"成長心態圖",mat:"紙張，彩色鉛筆",steps:["在左側畫出固定心態：「我做不到」、「這太難了」。","在右側畫出成長心態：「我還不能，但我在學習」、「這是一個挑戰」。","在兩側之間畫一座橋。"],refl:"哪個領域讓你最難保持成長心態？"},
+  {title:"我的完整故事",mat:"大張紙，彩色鉛筆",steps:["創作你生命中三個最重要的「章節」的視覺故事。","包括黑暗和光明時刻——它們都塑造了你。","給你的故事起一個標題，讚美你走過的路。"],refl:"你的故事中哪個章節塑造了最多的你？"},
+  {title:"未來自我的信",mat:"紙張，鉛筆",steps:["想像你在未來 5 年後的自己。","那個未來的你，給今天的你寫一封信。","包括鼓勵、智慧和你被看見的感覺。"],refl:"未來的你最想告訴現在的你什麼？"},
+  {title:"我選擇愛自己",mat:"紙張，彩色鉛筆",steps:["在頁面頂部寫：「今天，我選擇以這種方式愛自己…」。","完成 5 個具體、可行的陳述。","為每個陳述創作一個小視覺符號。"],refl:"哪個自我愛護行為感覺最真實，今天你可以實踐它？"}
+];
+var c = document.getElementById('container');
+exs.forEach(function(ex, i) {
+  var pg = document.createElement('div');
+  pg.className = 'page ex-page';
+  var stepsHtml = ex.steps.map(function(s, si) {
+    return '<div class="ex-step"><div class="ex-step-n">'+(si+1)+'</div><p>'+s+'</p></div>';
+  }).join('');
+  pg.innerHTML =
+    '<div class="ex-header"><span class="ex-topic">💜 自我價值練習</span><span class="ex-num">練習 '+(i+1)+' / 20</span></div>' +
+    '<div class="ex-title">'+ex.title+'</div>' +
+    '<div class="ex-mat"><strong>需要：</strong> '+ex.mat+'</div>' +
+    '<div class="ex-steps">'+stepsHtml+'</div>' +
+    '<div class="ex-space"></div>' +
+    '<div class="ex-refl"><div class="ex-refl-label">💭 反思</div><p>'+ex.refl+'</p></div>';
+  c.appendChild(pg);
+});
+</script>
+</body>
+</html>

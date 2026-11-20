@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>贈品 6 — 自信強化卡 40 張肯定卡</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@page { size: 210mm 297mm; margin: 0; }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root { --lav:#D9C9F7;--lavd:#B89FE0;--pink:#F3B8D2;--gold:#C9A84C;--title:#4E4036;--body:#6F6258;--body2:#8A7A70;--ft:'Noto Serif TC',serif;--fb:'Noto Sans TC',sans-serif; }
+body { font-family:var(--fb); color:var(--body); background:#FFF8F4; }
+.page { width:210mm; min-height:297mm; position:relative; page-break-after:always; overflow:hidden; display:flex; flex-direction:column; }
+.cover { background:linear-gradient(160deg,#D9C9F7 0%,#F3B8D2 50%,#FFF8F4 100%); align-items:center; justify-content:center; text-align:center; padding:40mm 20mm; }
+.cover-badge { font-size:9pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--lavd); background:rgba(255,255,255,.65); padding:5px 18px; border-radius:20px; display:inline-block; margin-bottom:20px; }
+.cover h1 { font-family:var(--ft); font-size:28pt; color:var(--title); line-height:1.3; margin-bottom:12px; }
+.cover p { font-size:11pt; color:var(--body); margin-bottom:24px; line-height:1.5; }
+.cover-pill { display:inline-block; background:var(--title); color:#fff; padding:7px 20px; border-radius:24px; font-size:9pt; font-weight:600; margin:3px; }
+.guide-page { background:#fff; padding:16mm 18mm; }
+.guide-h2 { font-family:var(--ft); font-size:20pt; color:var(--title); margin-bottom:6mm; }
+.guide-p { font-size:10pt; color:var(--body); line-height:1.65; margin-bottom:3mm; }
+.cards-page { background:#fff; padding:10mm 14mm; }
+.cards-title { font-family:var(--ft); font-size:14pt; color:var(--title); margin-bottom:6mm; padding-bottom:4mm; border-bottom:2px solid var(--lav); }
+.cards-grid { display:grid; grid-template-columns:1fr 1fr; gap:6mm; }
+.card { border:2px solid var(--lav); border-radius:12px; padding:10px 12px; display:flex; flex-direction:column; gap:5px; min-height:52mm; background:linear-gradient(160deg,#FFF8F4,#fff); }
+.card-num { font-size:8pt; font-weight:700; color:var(--lavd); letter-spacing:.08em; }
+.card-affirmation { font-family:var(--ft); font-size:9pt; color:var(--title); line-height:1.5; font-weight:700; border-bottom:1px solid var(--lav); padding-bottom:5px; }
+.card-task-label { font-size:7.5pt; font-weight:700; color:var(--body2); letter-spacing:.08em; text-transform:uppercase; margin-top:3px; }
+.card-task { font-size:8.5pt; color:var(--body); line-height:1.4; flex:1; }
+.card-space { border-top:1px dashed var(--lav); margin-top:4px; padding-top:4px; min-height:12mm; }
+.card-hint { font-size:7pt; color:var(--body2); font-style:italic; }
+@media print { .no-print { display:none!important; } }
+@media screen { body { background:#e0d8d0; padding:20px; } .page { margin:0 auto 20px; box-shadow:0 4px 20px rgba(0,0,0,.2); } .print-btn { position:fixed; bottom:24px; right:24px; background:var(--lavd); color:#fff; border:none; border-radius:50px; padding:14px 28px; font-size:14px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(184,159,224,.5); z-index:1000; } }
+</style>
+</head>
+<body>
+<button class="print-btn no-print" onclick="window.print()">🖨️ 列印 / 儲存 PDF</button>
+<div class="page cover">
+  <div class="cover-badge">🎁 贈品 6 · 藝術治療手冊</div>
+  <h1>自信強化卡<br>40 張肯定卡</h1>
+  <p>培養更大自信心的肯定語和繪畫卡。每張：正向肯定 + 視覺任務</p>
+  <div>
+    <span class="cover-pill">💪 40 張卡片</span>
+    <span class="cover-pill">📖 可列印</span>
+    <span class="cover-pill">⭐ 每日自信</span>
+  </div>
+</div>
+<div class="page guide-page">
+  <div class="guide-h2">如何使用肯定卡</div>
+  <p class="guide-p">每張卡片包含兩個部分：一個積極的肯定語，以及一個視覺任務，幫助你將那個肯定深入你的感受，而不只是你的思維。</p>
+  <p class="guide-p">研究表明，將肯定與創意行為（例如繪畫）結合，比單獨閱讀肯定更有效。當你畫出肯定時，你正在通過多個感官通道強化那個信念。</p>
+  <p class="guide-p" style="font-weight:600;color:var(--title);">如何使用：</p>
+  <p class="guide-p">每天早晨選擇一張卡片。大聲讀出肯定語 3 次。完成視覺任務（5-10 分鐘）。在空白處記下你的想法或感受。</p>
+  <p class="guide-p">如果某張卡片引起強烈的抵觸感，那張卡片可能是今天最重要的一張。在那裡停留。</p>
+</div>
+<div id="cards-container"></div>
+<script>
+var cards = [
+  {a:"我相信自己的能力。", t:"畫一隻強壯的手或一個根深紮實的樹根，代表你的能力基礎。"},
+  {a:"我值得被愛和被珍視。", t:"畫一顆心，裡面充滿了你生活中愛你的人的象徵符號。"},
+  {a:"我足夠，就是現在的我。", t:"畫出「足夠」這個詞的感覺——它看起來像什麼形狀和顏色？"},
+  {a:"我有能力面對任何挑戰。", t:"畫出一座你克服過的山，以及讓你到達山頂的東西。"},
+  {a:"我的聲音值得被聽見。", t:"畫出「你的聲音」的視覺形象——它的形狀、顏色、強度。"},
+  {a:"我選擇今天充滿信心地行動。", t:"畫出「充滿信心的一步」——它看起來、感覺像什麼？"},
+  {a:"我在不斷地成長和進化。", t:"畫出你的成長旅程——從種子到今天的植物。"},
+  {a:"我值得成功和豐盛。", t:"畫出「豐盛」的象徵——對你來說豐盛是什麼樣子？"},
+  {a:"我的不完美讓我真實。", t:"畫出一件你接受自己不完美的事情，並找到它的美麗。"},
+  {a:"我有力量創造我想要的改變。", t:"畫出一個代表你力量的象徵，把它放在手心。"},
+  {a:"我值得和平與快樂。", t:"畫出「平靜和喜悅」的感覺——用顏色、形狀和紋理。"},
+  {a:"我相信我的直覺和判斷。", t:"畫出「直覺」的視覺形象——你的內在智慧是什麼樣子？"},
+  {a:"我為自己的成就感到驕傲。", t:"選擇你最驕傲的一個成就，以視覺形式慶祝它。"},
+  {a:"我的存在對世界有貢獻。", t:"畫出你留給世界的一個「印記」——用象徵形式。"},
+  {a:"我勇於嘗試新事物。", t:"畫出「勇氣」在你身體中的感覺，以及它居住的地方。"},
+  {a:"我值得別人的尊重和善待。", t:"畫出「被尊重」的感覺——它看起來像什麼？"},
+  {a:"我相信我的旅程正在展開。", t:"畫出你生命旅程的一條路，包括它的轉彎和未知。"},
+  {a:"我有創造快樂的能力。", t:"畫出今天你可以為自己創造的一個小快樂。"},
+  {a:"我正在做我最好能做的事。", t:"畫出「足夠好」的感覺——不完美但真實。"},
+  {a:"我的感受是有效且值得尊重的。", t:"畫出今天你的一個感受，讓它完全存在於紙上。"},
+  {a:"我選擇原諒自己的過去。", t:"畫出寬恕自己的一個象徵——溫暖的顏色和形狀。"},
+  {a:"我正在建立我想要的生活。", t:"畫出你正在建設的「房子」——每塊磚代表你正在建立的一個方面。"},
+  {a:"我值得美好的關係。", t:"畫出「真實友誼」或「健康關係」的象徵——它感覺像什麼？"},
+  {a:"我有我需要的所有智慧。", t:"畫出「內在智慧」的形象——你自己的智慧之源。"},
+  {a:"我相信今天會是美好的一天。", t:"畫出「美好的一天」的感覺——什麼顏色和光線？"},
+  {a:"我勇敢地展示真實的自我。", t:"畫出「真實的我」的象徵——不是你向世界展示的面孔，而是你真正的本質。"},
+  {a:"我值得擁有時間和空間休息。", t:"畫出你理想的「休息空間」——視覺上的平靜和恢復。"},
+  {a:"我正在學習愛自己的方式。", t:"畫出「愛自己」是一個正在進行中的旅程——不是完成的狀態。"},
+  {a:"我有足夠的力量設定界限。", t:"畫出「健康的界限」的視覺形象——它看起來像什麼？"},
+  {a:"我的過去不能定義我的未來。", t:"畫出過去和未來之間的「橋」——今天的你站在橋的中間。"},
+  {a:"我值得追求我的夢想。", t:"畫出你最大的夢想的象徵——給它形狀、顏色和生命。"},
+  {a:"我正在成為越來越好的自己。", t:"畫出「進化的你」——從今天到一年後的視覺旅程。"},
+  {a:"我相信事情終將好轉。", t:"畫出「希望」的象徵——對你來說希望看起來像什麼？"},
+  {a:"我的努力是值得的。", t:"畫出「努力的種子」和「結果的花朵」——連結它們。"},
+  {a:"我值得被看見和被聽見。", t:"畫出「被完全看見」的感覺——所有的你，所有的顏色。"},
+  {a:"我有能力創造積極的改變。", t:"畫出一個波紋——從你出發，向外擴散到世界的變化。"},
+  {a:"我相信自己可以克服困難。", t:"畫出你已經克服的一個困難，和讓你做到的力量。"},
+  {a:"我正在學習欣賞自己的獨特性。", t:"畫出「我的獨特性」——那些使你不同於其他人的東西。"},
+  {a:"我值得擁有我的感受。", t:"選擇今天最強烈的情感，給它一個完整的頁面，讓它存在。"},
+  {a:"我相信自己正走在正確的道路上。", t:"畫出你正在走的「道路」——它的質感、顏色和它通往的方向。"}
+];
+var c = document.getElementById('cards-container');
+var perPage = 5;
+for (var p = 0; p < Math.ceil(cards.length/perPage); p++) {
+  var pg = document.createElement('div');
+  pg.className = 'page cards-page';
+  var start = p * perPage;
+  var end = Math.min(start + perPage, cards.length);
+  var title = document.createElement('div');
+  title.className = 'cards-title';
+  title.textContent = '💪 卡片 ' + (start+1) + '–' + end + ' / ' + cards.length;
+  pg.appendChild(title);
+  var grid = document.createElement('div');
+  grid.className = 'cards-grid';
+  for (var i = start; i < end; i++) {
+    var card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = '<div class="card-num">卡片 #'+(i+1)+'</div>'
+      + '<div class="card-affirmation">' + cards[i].a + '</div>'
+      + '<div class="card-task-label">🎨 視覺任務</div>'
+      + '<div class="card-task">' + cards[i].t + '</div>'
+      + '<div class="card-space"><div class="card-hint">在此畫出或寫下你的回應…</div></div>';
+    grid.appendChild(card);
+  }
+  pg.appendChild(grid);
+  c.appendChild(pg);
+}
+</script>
+</body>
+</html>

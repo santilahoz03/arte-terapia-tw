@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>贈品 4 — 情感解放引導 30 個練習</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@page { size: 210mm 297mm; margin: 0; }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root { --lav:#D9C9F7;--lavd:#B89FE0;--pink:#F3B8D2;--title:#4E4036;--body:#6F6258;--body2:#8A7A70;--ft:'Noto Serif TC',serif;--fb:'Noto Sans TC',sans-serif; }
+body { font-family:var(--fb); color:var(--body); background:#FFF8F4; }
+.page { width:210mm; min-height:297mm; position:relative; page-break-after:always; overflow:hidden; display:flex; flex-direction:column; }
+.cover { background:linear-gradient(160deg,#D9C9F7 0%,#F3B8D2 50%,#FFF8F4 100%); align-items:center; justify-content:center; text-align:center; padding:40mm 20mm; }
+.cover-badge { font-size:9pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--lavd); background:rgba(255,255,255,.65); padding:5px 18px; border-radius:20px; display:inline-block; margin-bottom:20px; }
+.cover h1 { font-family:var(--ft); font-size:28pt; color:var(--title); line-height:1.3; margin-bottom:12px; }
+.cover p { font-size:11pt; color:var(--body); margin-bottom:24px; line-height:1.5; }
+.cover-pill { display:inline-block; background:var(--title); color:#fff; padding:7px 20px; border-radius:24px; font-size:9pt; font-weight:600; margin:3px; }
+.ex-page { background:#fff; padding:14mm 18mm; }
+.ex-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6mm; padding-bottom:4mm; border-bottom:2px solid var(--lav); }
+.ex-topic { font-size:8pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--lavd); }
+.ex-num { font-size:8pt; color:var(--body2); }
+.ex-title { font-family:var(--ft); font-size:17pt; color:var(--title); margin-bottom:4mm; line-height:1.3; }
+.ex-mat { background:#f9f4ff; border-radius:8px; padding:6px 10px; margin-bottom:5mm; font-size:9pt; color:var(--body2); }
+.ex-mat strong { color:var(--lavd); }
+.ex-steps { display:flex; flex-direction:column; gap:3mm; margin-bottom:5mm; }
+.ex-step { display:flex; gap:10px; align-items:flex-start; }
+.ex-step-n { width:20px; height:20px; background:linear-gradient(135deg,var(--lav),var(--pink)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:8pt; font-weight:700; color:var(--title); flex-shrink:0; margin-top:1px; }
+.ex-step p { font-size:10pt; color:var(--body); line-height:1.55; }
+.ex-space { flex:1; border:1.5px dashed #d9c9f7; border-radius:8px; margin:3mm 0; min-height:55mm; }
+.ex-refl { background:linear-gradient(135deg,#fef3f8,#f0ebff); border-radius:8px; padding:8px 12px; }
+.ex-refl-label { font-size:8pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--lavd); margin-bottom:3px; }
+.ex-refl p { font-size:10pt; color:var(--title); font-style:italic; line-height:1.5; }
+@media print { .no-print { display:none!important; } }
+@media screen { body { background:#e0d8d0; padding:20px; } .page { margin:0 auto 20px; box-shadow:0 4px 20px rgba(0,0,0,.2); } .print-btn { position:fixed; bottom:24px; right:24px; background:var(--lavd); color:#fff; border:none; border-radius:50px; padding:14px 28px; font-size:14px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(184,159,224,.5); z-index:1000; } }
+</style>
+</head>
+<body>
+<button class="print-btn no-print" onclick="window.print()">🖨️ 列印 / 儲存 PDF</button>
+<div class="page cover">
+  <div class="cover-badge">🎁 贈品 4 · 藝術治療手冊</div>
+  <h1>情感解放引導<br>30 個練習</h1>
+  <p>識別、探索和化解情感阻礙的深度練習</p>
+  <div>
+    <span class="cover-pill">🔓 30 個練習</span>
+    <span class="cover-pill">📖 可列印 PDF</span>
+    <span class="cover-pill">💜 深度療癒</span>
+  </div>
+</div>
+<div id="container"></div>
+<script>
+var exs = [
+  {title:"阻礙的形狀",mat:"紙張，彩色鉛筆",steps:["想想你最大的情感阻礙。","以抽象形式畫出那個阻礙。","給它形狀、顏色、質感和重量。"],refl:"那個阻礙感覺像什麼——石頭、牆壁、迷霧還是別的什麼？"},
+  {title:"阻礙之下",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出阻礙的表面（你看到的）。","用另一種顏色：畫出阻礙之下的東西（你真正感受到的）。","觀察兩者的差異。"],refl:"在阻礙的表面之下，藏著什麼？"},
+  {title:"情感冰山",mat:"紙張，藍/灰色鉛筆",steps:["畫一座冰山（水面上方和水面下方）。","水面上：你向外表現的情感（你說你感受到的）。","水面下：你真正感受到的（通常更脆弱的）情感。"],refl:"你的「水面下」情感有多少機會被感受到？"},
+  {title:"情感堵塞地圖",mat:"紙張，彩色鉛筆",steps:["畫出你的身體輪廓。","標記你感到「堵塞」或「停滯」的部位。","探索：那些部位與你生活的哪些領域有關？"],refl:"你的身體用什麼方式藏住那些難以表達的情感？"},
+  {title:"阻礙的起源",mat:"紙張，鉛筆",steps:["選擇你最大的一個情感阻礙。","想想第一次感受到它是什麼時候？","以視覺形式呈現那個最初時刻。"],refl:"那個阻礙是在什麼年齡形成的？當時的你需要什麼？"},
+  {title:"情感天氣系統",mat:"紙張，彩色鉛筆",steps:["想想一個情緒化的情況（爭吵、困境、失望）。","畫出那個情況就像一個天氣系統：風、雨、雷暴、氣壓。","在旁邊畫出情況解決後的天氣。"],refl:"哪種天氣最能描述你的情感模式？"},
+  {title:"未表達的話語",mat:"紙張，鉛筆",steps:["想想一個你從未說出的重要話語——對某人，或對自己。","那些話語的形狀是什麼？","給那些話語一個視覺形式——不必是文字。"],refl:"如果你說出那些話語，什麼會改變？"},
+  {title:"悲傷的接觸",mat:"紙張，溫暖顏色",steps:["允許自己接觸一個舊悲傷——只是簡短地。","以溫柔的線條和顏色畫出那個悲傷。","在旁邊寫下：那個悲傷需要我給它什麼？"],refl:"悲傷是否有時被允許存在，而不必立即被解決？"},
+  {title:"怒火的能量轉化",mat:"紙張，紅色和橙色鉛筆",steps:["想想讓你憤怒的事情。","先讓怒火完全表達——激烈、強力的線條和色彩。","然後把那個能量轉化成一種建設性的動力——畫出它可以去的地方。"],refl:"如果你的憤怒被引導到正確的地方，它可以創造什麼？"},
+  {title:"恐懼的尺寸",mat:"紙張，彩色鉛筆",steps:["想想你目前最大的恐懼。","畫出那個恐懼的真實尺寸（相對於你自己）。","然後畫出你真正面對恐懼時你實際擁有的力量。"],refl:"恐懼是否有時比它實際上更大？"},
+  {title:"身體的信使",mat:"紙張，彩色鉛筆",steps:["閉眼，注意你身體現在的感覺。","選擇最強烈的感覺，給它一個顏色和形狀。","問那個感覺：你想告訴我什麼？"],refl:"你的身體最頻繁地試圖告訴你什麼信息？"},
+  {title:"情感日記版",mat:"紙張，彩色鉛筆",steps:["回顧這一週。","以圖形方式記錄每天的情感狀態（顏色、形狀、波浪）。","觀察規律和連結。"],refl:"你的情感一週中有哪些重複的模式？"},
+  {title:"完成未完的事",mat:"紙張，兩種不同顏色",steps:["想想一個生活中未完成的情感情況（關係、對話、決定）。","以一種顏色畫出目前的狀態。","以另一種顏色畫出理想的完成方式。"],refl:"阻止那個完成的是什麼？"},
+  {title:"情感滿溢",mat:"大張紙，任意顏色",steps:["感受你最強烈的當前情感。","讓它完全溢出到紙上——沒有控制，沒有方向。","之後觀察產生了什麼。"],refl:"完全讓情感溢出的感覺如何？"},
+  {title:"阻礙的資訊",mat:"紙張，鉛筆",steps:["選擇一個情感阻礙。","問它：「你在這裡保護什麼？」","問它：「如果你消失了，我可能需要面對什麼？」"],refl:"阻礙保護你不必面對的核心傷痛是什麼？"},
+  {title:"失落哀悼",mat:"紙張，藍/灰色鉛筆",steps:["想想你曾失去的某樣東西（人、機會、時光、版本的自己）。","畫出那個失落的形狀。","讓哀悼流動而不試圖解決它。"],refl:"你給自己足夠的時間和空間哀悼嗎？"},
+  {title:"情感解放門",mat:"紙張，彩色鉛筆",steps:["在頁面中央畫一扇門。","門的一側：你想放手的東西。","門的另一側：放手後你前進的方向。"],refl:"走過那扇門，你最先感受到的是什麼？"},
+  {title:"平靜的質感",mat:"紙張，藍/綠色鉛筆",steps:["回憶一個你感到深深平靜的時刻。","畫出那個平靜的質感（它的表面、溫度、光線）。","那個平靜在你身體的什麼地方？"],refl:"你可以隨時喚回那個平靜的感覺嗎？"},
+  {title:"情感週期",mat:"紙張，彩色鉛筆",steps:["思考你情緒週期中重複出現的模式（例如：突破→疲憊→休息→再生）。","以視覺圓圈形式畫出你的週期。","標記你現在在週期的哪個位置。"],refl:"你可以更好地接受你情感週期的不同階段嗎？"},
+  {title:"我選擇釋放",mat:"紙張，彩色鉛筆",steps:["在頁面頂部寫：「我選擇釋放…」。","完成 7 個陳述——任何阻礙你自由和喜悅的東西。","每個陳述後，畫一個象徵釋放的符號。"],refl:"哪個釋放最讓你感到輕鬆？"},
+  {title:"阻礙的禮物",mat:"紙張，兩種不同顏色",steps:["選擇一個長期以來的情感阻礙。","問：這個阻礙保護了我什麼？它給了我什麼技能或智慧？","以視覺形式呈現那個「禮物」。"],refl:"這個阻礙如何塑造了今天的你？"},
+  {title:"情感根源樹",mat:"紙張，棕/綠色鉛筆",steps:["畫一棵樹，根部=情感根源（家庭、文化、經歷）。","樹幹=你今天情感的核心模式。","樹枝=這些模式如何影響你的生活。"],refl:"哪條根影響了你的情感最多？"},
+  {title:"身體界限繪製",mat:"紙張，彩色鉛筆",steps:["畫出你的身體輪廓。","在你感到界限「薄弱」的地方標記（即你讓太多進入的地方）。","在你感到界限「健康」的地方標記。"],refl:"在哪些關係或情境中，你最需要更強的界限？"},
+  {title:"情感重新框架",mat:"紙張，兩種不同顏色",steps:["用一種顏色：以舊的方式畫出一個困難情況。","用另一種顏色：以新的視角畫出同一情況。","觀察重新框架的力量。"],refl:"從不同角度看，這個情況如何改變？"},
+  {title:"心的解壓縮",mat:"紙張，彩色鉛筆",steps:["想像你的心是一個緊握的拳頭。","緩慢地，讓它打開——畫出那個過程。","打開後，心裡釋放出什麼？"],refl:"你的心在緊握時在保護什麼？"},
+  {title:"情感大掃除",mat:"大張紙，彩色鉛筆",steps:["在紙上列出所有你「積累」的情感——未解決的、反覆出現的。","為每個情感選擇一個顏色和形狀。","現在決定：哪個可以開始清理？"],refl:"哪個積累的情感最消耗你的能量？"},
+  {title:"療癒的接觸點",mat:"紙張，溫暖顏色",steps:["想想誰的陪伴讓你感到安全和被看見。","畫出那個人存在你生活中的感覺。","在旁邊寫下：我可以如何在自己身上創造這種感覺？"],refl:"你的療癒最需要來自他人，還是可以來自自己？"},
+  {title:"情感詩意圖",mat:"紙張，彩色鉛筆",steps:["選擇一個複雜的情感（例如：迷失感、懷舊、期望混合恐懼）。","以詩意的視覺語言畫出那個情感——不是字面上，而是通過隱喻。","給這幅畫取一個詩意的標題。"],refl:"這種情感的核心詩意是什麼？"},
+  {title:"放手的儀式",mat:"紙張，彩色鉛筆，剪刀",steps:["在紙上寫下或畫出你想放手的東西。","以某種儀式性的方式結束：折疊、剪切、或簡單地畫上「結束」的象徵。","想像那個東西已被釋放。"],refl:"釋放後，你的內心出現了什麼空間？"},
+  {title:"我是自由的",mat:"大張紙，彩色鉛筆",steps:["在頁面中央寫：「我是自由的，因為…」。","完成 10 個陳述——以你已經解放自己的方式。","用你最喜歡的顏色和形狀圍繞著那些陳述。"],refl:"哪個自由最讓你有感覺？"}
+];
+var c = document.getElementById('container');
+exs.forEach(function(ex, i) {
+  var pg = document.createElement('div');
+  pg.className = 'page ex-page';
+  var stepsHtml = ex.steps.map(function(s, si) {
+    return '<div class="ex-step"><div class="ex-step-n">'+(si+1)+'</div><p>'+s+'</p></div>';
+  }).join('');
+  pg.innerHTML =
+    '<div class="ex-header"><span class="ex-topic">🔓 情感解放</span><span class="ex-num">練習 '+(i+1)+' / 30</span></div>' +
+    '<div class="ex-title">'+ex.title+'</div>' +
+    '<div class="ex-mat"><strong>需要：</strong> '+ex.mat+'</div>' +
+    '<div class="ex-steps">'+stepsHtml+'</div>' +
+    '<div class="ex-space"></div>' +
+    '<div class="ex-refl"><div class="ex-refl-label">💭 反思</div><p>'+ex.refl+'</p></div>';
+  c.appendChild(pg);
+});
+</script>
+</body>
+</html>

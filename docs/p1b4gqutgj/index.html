@@ -1,31 +1,150 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>你的訪問權限 — 藝術治療手冊</title>
+<title>藝術治療手冊 — 你的專屬訪問</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  html, body { margin:0; background:#FAF7F2; color:#2B2522; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans TC",sans-serif; }
-  .wrap { max-width:560px; margin:0 auto; padding:64px 20px; text-align:center; }
-  .badge { display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; background:#EFE6DA; padding:6px 12px; border-radius:99px; }
-  h1 { font-size:28px; line-height:1.3; margin:18px 0 10px; }
-  p { font-size:17px; line-height:1.55; color:#5B514B; }
-  .card { background:#fff; border:1px solid #EAE0D5; border-radius:16px; padding:24px 20px; margin-top:28px; }
-  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:#1F9D55; margin-right:8px; animation:p 1.6s infinite; }
-  @keyframes p { 50% { opacity:.3; } }
-  @media (prefers-reduced-motion: reduce) { .dot { animation:none; } }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root { --bg:#FFF8F4;--lav:#D9C9F7;--lavd:#B89FE0;--pink:#F3B8D2;--gold:#C9A84C;--title:#4E4036;--body:#6F6258;--body2:#8A7A70;--ft:'Noto Serif TC',serif;--fb:'Noto Sans TC',sans-serif; }
+body { font-family:var(--fb); color:var(--body); background:var(--bg); min-height:100vh; }
+.hero { background:linear-gradient(145deg,#4E4036 0%,#6F6258 50%,#B89FE0 100%); padding:50px 24px 40px; text-align:center; }
+.hero-badge { display:inline-block; background:rgba(201,168,76,.2); border:1px solid var(--gold); color:var(--gold); font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:5px 18px; border-radius:20px; margin-bottom:16px; }
+.hero h1 { font-family:var(--ft); font-size:clamp(22px,5vw,34px); color:#fff; line-height:1.3; margin-bottom:10px; }
+.hero p { font-size:14px; color:rgba(255,255,255,.8); line-height:1.6; max-width:480px; margin:0 auto 20px; }
+.hero-pills { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+.hero-pill { background:rgba(255,255,255,.12); color:#fff; border:1px solid rgba(255,255,255,.3); font-size:11px; font-weight:600; padding:5px 14px; border-radius:20px; }
+.main { max-width:680px; margin:0 auto; padding:30px 16px 60px; }
+.section-title { font-family:var(--ft); font-size:18px; color:var(--title); margin:30px 0 16px; }
+.item-card { background:#fff; border-radius:14px; padding:18px 20px; margin-bottom:12px; border:1.5px solid var(--lav); display:flex; align-items:flex-start; gap:14px; transition:box-shadow .2s; }
+.item-card:hover { box-shadow:0 4px 20px rgba(184,159,224,.25); }
+.item-icon { width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0; }
+.icon-main { background:linear-gradient(135deg,var(--lav),var(--pink)); }
+.icon-bonus { background:linear-gradient(135deg,#f9f4ff,#fef3f8); border:1.5px solid var(--lav); }
+.icon-special { background:linear-gradient(135deg,#4E4036,#6F6258); }
+.item-info { flex:1; min-width:0; }
+.item-label { font-size:10px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--body2); margin-bottom:3px; }
+.item-title { font-family:var(--ft); font-size:14px; color:var(--title); margin-bottom:4px; line-height:1.3; }
+.item-desc { font-size:12px; color:var(--body2); line-height:1.5; margin-bottom:10px; }
+.item-btn { display:inline-flex; align-items:center; gap:6px; background:linear-gradient(135deg,var(--lavd),var(--pink)); color:#fff; text-decoration:none; font-size:12px; font-weight:700; padding:7px 16px; border-radius:24px; transition:opacity .15s; }
+.item-btn:hover { opacity:.85; }
+.item-btn-special { background:linear-gradient(135deg,#4E4036,var(--gold)); }
+.divider { height:1px; background:linear-gradient(to right,transparent,var(--lav),transparent); margin:8px 0; }
+.note { background:linear-gradient(135deg,#f9f4ff,#fef3f8); border-radius:10px; padding:14px 18px; margin-top:30px; }
+.note p { font-size:12px; color:var(--body2); line-height:1.6; }
+.note strong { color:var(--lavd); }
+.footer { text-align:center; padding:20px 16px; font-size:11px; color:var(--body2); }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <span class="badge">購買已確認</span>
-    <h1>藝術治療手冊 — 100+ 創意練習 + 7 免費贈品</h1>
-    <p>謝謝你！我們正在準備你的所有資料。這個頁面很快就會更新，包含你所有的文件。</p>
-    <div class="card">
-      <p><span class="dot"></span><strong>請保存這個連結</strong></p>
-      <p>這是你終身訪問的連結。請在幾小時內回來，你將找到主要產品和所有贈品。</p>
+<div class="hero">
+  <div class="hero-badge">⭐ 購買已確認</div>
+  <h1>藝術治療手冊<br>— 你的專屬訪問</h1>
+  <p>謝謝你的購買！以下是你所有的資料。點擊打開，儲存並享受。</p>
+  <div class="hero-pills">
+    <span class="hero-pill">🎨 100+ 創意練習</span>
+    <span class="hero-pill">📦 7 個免費贈品</span>
+    <span class="hero-pill">⭐ 特別附贈版本</span>
+    <span class="hero-pill">🌐 繁體中文</span>
+  </div>
+</div>
+
+<div class="main">
+  <div class="section-title">📗 主要產品</div>
+
+  <div class="item-card">
+    <div class="item-icon icon-main">🎨</div>
+    <div class="item-info">
+      <div class="item-label">核心手冊</div>
+      <div class="item-title">藝術治療手冊 — 100+ 創意練習，10 大主題</div>
+      <div class="item-desc">完整的藝術治療指南：100 個有引導的創意練習，附有療癒活動和反思問題，分為 10 大主題。可列印 PDF 格式，反覆使用。</div>
+      <a href="../a2p8r5m9n4/" class="item-btn">🎨 開啟手冊 →</a>
     </div>
   </div>
+
+  <div class="divider"></div>
+  <div class="section-title">🎁 你的免費贈品</div>
+
+  <div class="item-card">
+    <div class="item-icon icon-bonus">🖌️</div>
+    <div class="item-info">
+      <div class="item-label">贈品 1</div>
+      <div class="item-title">17 個額外藝術治療技術</div>
+      <div class="item-desc">全新創意練習：色彩對話、閉眼繪畫、紋理拼貼等獨特技術</div>
+      <a href="../f8n2k7p4r1/" class="item-btn">📖 開啟贈品 1 →</a>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <div class="item-icon icon-bonus">⭐</div>
+    <div class="item-info">
+      <div class="item-label">贈品 2</div>
+      <div class="item-title">20 個自我價值練習</div>
+      <div class="item-desc">專門針對自我肯定的練習：力量來源、自我守護者、優勢之樹等</div>
+      <a href="../m3v9j5t2w6/" class="item-btn">📖 開啟贈品 2 →</a>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <div class="item-icon icon-bonus">🃏</div>
+    <div class="item-info">
+      <div class="item-label">贈品 3</div>
+      <div class="item-title">焦慮對話卡 — 50 張</div>
+      <div class="item-desc">50 個引導問題和反思方向，幫助你有意識地面對焦慮。可列印後每日使用。</div>
+      <a href="../x4c8b1q7e3/" class="item-btn">📖 開啟贈品 3 →</a>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <div class="item-icon icon-bonus">🔓</div>
+    <div class="item-info">
+      <div class="item-label">贈品 4</div>
+      <div class="item-title">情感解放引導 — 30 個練習</div>
+      <div class="item-desc">30 個深度練習，幫助你識別、探索和化解情感阻礙</div>
+      <a href="../h6d2n9s5m8/" class="item-btn">📖 開啟贈品 4 →</a>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <div class="item-icon icon-bonus">📋</div>
+    <div class="item-info">
+      <div class="item-label">贈品 5</div>
+      <div class="item-title">實踐與陪伴指南</div>
+      <div class="item-desc">完整的藝術治療日常應用實踐指南：工具、例程、家庭使用和進度追蹤</div>
+      <a href="../r3f7g4a1t9/" class="item-btn">📖 開啟贈品 5 →</a>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <div class="item-icon icon-bonus">💪</div>
+    <div class="item-info">
+      <div class="item-label">贈品 6</div>
+      <div class="item-title">自信強化卡 — 40 張肯定卡</div>
+      <div class="item-desc">40 張肯定語和繪畫卡，培養更大的自信心。每張：正向肯定 + 視覺任務</div>
+      <a href="../z5y8u2o6l1/" class="item-btn">📖 開啟贈品 6 →</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-title">✨ 特別附贈</div>
+
+  <div class="item-card">
+    <div class="item-icon icon-special">⭐</div>
+    <div class="item-info">
+      <div class="item-label">特別附贈 — 第二版</div>
+      <div class="item-title">100 個全新活動 — 完整第二版</div>
+      <div class="item-desc">手冊全新補充，包含 100 個新活動分布於 10 個全新主題：自然元素、城市風景、動物力量、夜晚夢境等</div>
+      <a href="../e9j3v7k4c8/" class="item-btn item-btn-special">⭐ 開啟特別附贈 →</a>
+    </div>
+  </div>
+
+  <div class="note">
+    <p><strong>使用方法：</strong>手冊：點擊「開啟手冊」，在瀏覽器中閱讀或列印。贈品：在瀏覽器中開啟，儲存為 PDF。訪問是永久性的。</p>
+  </div>
+</div>
+
+<div class="footer">藝術治療手冊 · 購後專屬訪問</div>
 </body>
 </html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>特別附贈 — 100 個全新活動 第二版</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@page { size: 210mm 297mm; margin: 0; }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root { --bg:#FFF8F4;--lav:#D9C9F7;--lavd:#B89FE0;--pink:#F3B8D2;--gold:#C9A84C;--title:#4E4036;--body:#6F6258;--body2:#8A7A70;--ft:'Noto Serif TC',serif;--fb:'Noto Sans TC',sans-serif; }
+body { font-family:var(--fb); color:var(--body); background:var(--bg); }
+.page { width:210mm; min-height:297mm; position:relative; page-break-after:always; overflow:hidden; display:flex; flex-direction:column; }
+.cover { background:linear-gradient(145deg,#4E4036 0%,#6F6258 50%,#C9A84C 100%); align-items:center; justify-content:center; text-align:center; padding:40mm 20mm; }
+.cover-badge { display:inline-block; background:rgba(201,168,76,.25); border:1px solid var(--gold); color:var(--gold); font-size:9pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:5px 18px; border-radius:20px; margin-bottom:20px; }
+.cover h1 { font-family:var(--ft); font-size:28pt; color:#fff; line-height:1.3; margin-bottom:12px; }
+.cover p { font-size:11pt; color:rgba(255,255,255,.85); margin-bottom:24px; line-height:1.5; }
+.cover-pill { display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.4); color:#fff; padding:7px 20px; border-radius:24px; font-size:9pt; font-weight:600; margin:3px; }
+.toc-page { background:#fff; padding:20mm 18mm; }
+.toc-title { font-family:var(--ft); font-size:22pt; color:var(--title); margin-bottom:8mm; border-bottom:2px solid var(--lav); padding-bottom:6mm; }
+.toc-theme { display:flex; justify-content:space-between; align-items:center; padding:4.5mm 0; border-bottom:1px solid #f0e8e0; }
+.toc-theme-left { display:flex; align-items:center; gap:10px; }
+.toc-num { width:26px; height:26px; background:linear-gradient(135deg,#4E4036,var(--gold)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:9pt; color:#fff; flex-shrink:0; }
+.toc-name { font-size:11pt; color:var(--title); font-weight:600; }
+.toc-sub { font-size:8.5pt; color:var(--body2); }
+.toc-count { font-size:9pt; color:var(--gold); font-weight:600; }
+.theme-intro { align-items:center; justify-content:center; text-align:center; padding:30mm 20mm; background:linear-gradient(135deg,#2a1f1a,#4E4036); }
+.theme-intro-badge { display:inline-block; background:rgba(201,168,76,.2); border:1px solid var(--gold); color:var(--gold); font-size:9pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:5px 16px; border-radius:20px; margin-bottom:16px; }
+.theme-intro h2 { font-family:var(--ft); font-size:28pt; color:#fff; line-height:1.3; margin-bottom:12px; }
+.theme-intro p { font-size:11pt; color:rgba(255,255,255,.8); line-height:1.6; max-width:140mm; margin:0 auto 20px; }
+.theme-intro-count { font-size:10pt; color:var(--gold); font-weight:700; }
+.ex-page { background:#fff; padding:14mm 18mm; }
+.ex-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6mm; padding-bottom:4mm; border-bottom:2px solid var(--lav); }
+.ex-topic { font-size:8pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); }
+.ex-num { font-size:8pt; color:var(--body2); }
+.ex-title { font-family:var(--ft); font-size:17pt; color:var(--title); margin-bottom:4mm; line-height:1.3; }
+.ex-materials { display:flex; align-items:flex-start; gap:8px; background:#f5f0e8; border-radius:8px; padding:6px 10px; margin-bottom:5mm; font-size:9pt; color:var(--body2); }
+.ex-materials span { font-weight:700; color:var(--gold); flex-shrink:0; }
+.ex-steps { display:flex; flex-direction:column; gap:3mm; margin-bottom:5mm; }
+.ex-step { display:flex; gap:10px; align-items:flex-start; }
+.ex-step-n { width:20px; height:20px; background:linear-gradient(135deg,#4E4036,var(--gold)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:8pt; font-weight:700; color:#fff; flex-shrink:0; margin-top:1px; }
+.ex-step p { font-size:10pt; color:var(--body); line-height:1.55; }
+.ex-space { flex:1; border:1.5px dashed #d9c9f7; border-radius:8px; margin:3mm 0; min-height:50mm; }
+.ex-reflection { background:linear-gradient(135deg,#f5f0e8,#f0ebff); border-radius:8px; padding:8px 12px; }
+.ex-reflection-label { font-size:8pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin-bottom:3px; }
+.ex-reflection p { font-size:10pt; color:var(--title); font-style:italic; line-height:1.5; }
+@media print { .no-print { display:none!important; } .page { page-break-after:always; } }
+@media screen { body { background:#e0d8d0; padding:20px; } .page { margin:0 auto 20px; box-shadow:0 4px 20px rgba(0,0,0,.2); } .print-btn { position:fixed; bottom:24px; right:24px; background:#4E4036; color:var(--gold); border:none; border-radius:50px; padding:14px 28px; font-size:14px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(78,64,54,.5); z-index:1000; } }
+</style>
+</head>
+<body>
+<button class="print-btn no-print" onclick="window.print()">🖨️ 列印 / 儲存 PDF</button>
+<div class="page cover">
+  <div class="cover-badge">⭐ 特別附贈 · 第二版</div>
+  <h1>藝術治療手冊<br>100 個全新活動</h1>
+  <p>手冊完整補充：10 個全新主題，每個主題 10 個練習</p>
+  <div>
+    <span class="cover-pill">⭐ 10 個全新主題</span>
+    <span class="cover-pill">📖 100+ 練習</span>
+    <span class="cover-pill">🌐 繁體中文</span>
+  </div>
+</div>
+<div class="page toc-page">
+  <div class="toc-title">📋 第二版目錄</div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">1</div><div><div class="toc-name">身體與動作</div><div class="toc-sub">透過身體運動表達情感</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">2</div><div><div class="toc-name">自然的靈感</div><div class="toc-sub">從大自然汲取療癒力量</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">3</div><div><div class="toc-name">遊戲與幽默</div><div class="toc-sub">用輕鬆和歡笑療癒自己</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">4</div><div><div class="toc-name">陰影與光明</div><div class="toc-sub">整合內在的黑暗與光明</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">5</div><div><div class="toc-name">界限與自由</div><div class="toc-sub">在結構中找到自由</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">6</div><div><div class="toc-name">時間與變化</div><div class="toc-sub">與時間流動和平共處</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">7</div><div><div class="toc-name">故事與敘事</div><div class="toc-sub">重新書寫你的故事</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">8</div><div><div class="toc-name">連結與孤獨</div><div class="toc-sub">與自己和他人的平衡</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">9</div><div><div class="toc-name">力量與脆弱</div><div class="toc-sub">在脆弱中找到力量</div></div></div><div class="toc-count">10 個練習</div></div>
+  <div class="toc-theme"><div class="toc-theme-left"><div class="toc-num">10</div><div><div class="toc-name">感恩與奇蹟</div><div class="toc-sub">在日常中發現奇蹟</div></div></div><div class="toc-count">10 個練習</div></div>
+</div>
+<div id="ex-container"></div>
+<script>
+var THEMES2 = [
+  {num:1,name:"身體與動作",icon:"🤸",desc:"身體是情感的家。透過移動和身體意識，我們可以釋放情感並重新連結自我。",exercises:[
+    {title:"身體地圖",mat:"大張紙，彩色鉛筆",steps:["在紙上描繪你的身體輪廓。","標記今天你感到最活躍的三個部位。","為每個部位選擇代表其感受的顏色。"],refl:"你的身體今天最想告訴你什麼？"},
+    {title:"動作日記",mat:"紙張，鉛筆",steps:["用手慢慢移動，同時用另一隻手描繪那個動作的軌跡。","重複，改變速度和方向。","觀察出現的線條。"],refl:"你的自然動作模式是什麼？"},
+    {title:"能量流動",mat:"紙張，彩色鉛筆",steps:["閉眼，感受你身體的能量流動。","用不同顏色畫出能量流動的路徑。","哪裡流動順暢？哪裡感到阻礙？"],refl:"你的能量在哪裡流動最自由？"},
+    {title:"呼吸形狀",mat:"紙張，鉛筆",steps:["做三次深呼吸，觀察你的身體如何移動。","用線條畫出每次呼吸的形狀和大小。","比較三條線。"],refl:"你的呼吸告訴你什麼？"},
+    {title:"重量感知",mat:"紙張，彩色鉛筆",steps:["感受你身體的重量——地球引力。","以視覺形式畫出那種重量感。","現在想像輕盈，畫出對比。"],refl:"你的身體感覺更重還是更輕？"},
+    {title:"節奏之舞",mat:"紙張，彩色鉛筆，音樂",steps:["播放一首音樂，讓你的手隨著節奏移動在紙上。","不要思考，只是讓身體引導手。","停止音樂，觀察產生的圖案。"],refl:"你的身體節奏是什麼樣的？"},
+    {title:"痛苦的藏處",mat:"紙張，彩色鉛筆",steps:["每個人都在身體某處藏著痛苦。","畫出你身體的輪廓，標記你藏著痛苦的地方。","以溫柔的顏色和形狀圍繞那些地方。"],refl:"那些藏痛的地方需要什麼？"},
+    {title:"療癒接觸",mat:"紙張，溫暖顏色",steps:["想像你的手能放在自己身上最需要療癒的地方。","以視覺形式呈現那個接觸點。","想像溫暖從那個接觸點流出。"],refl:"你自己的接觸有多有療癒力？"},
+    {title:"強壯與柔軟",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出你身體最強壯的部分。","用另一種顏色：畫出你身體最柔軟的部分。","觀察兩者如何共存。"],refl:"強壯和柔軟如何在你體內和諧共處？"},
+    {title:"身體的感謝詩",mat:"紙張，彩色鉛筆",steps:["閉眼，感謝你身體的每個部分，從頭到腳。","睜眼，以視覺方式慶祝你的身體。","讓這幅畫成為對你身體的頌歌。"],refl:"你最難感謝自己身體的哪個部分？"}
+  ]},
+  {num:2,name:"自然的靈感",icon:"🌿",desc:"自然是最古老的療癒師。透過與自然的連結，我們可以重新找到平靜和視角。",exercises:[
+    {title:"樹木的智慧",mat:"紙張，棕/綠色鉛筆",steps:["想像你是一棵樹。","畫出你的根（你的基礎）、樹幹（你的力量）和樹葉（你向世界展示的）。","什麼天氣影響你的樹？"],refl:"你的樹需要什麼才能繁茂成長？"},
+    {title:"海浪週期",mat:"紙張，藍色鉛筆",steps:["想像你的情緒就像海浪。","畫出今天你的情緒海洋——平靜、波浪、還是風暴？","波浪告訴你什麼？"],refl:"你如何衝浪，而不是被波浪淹沒？"},
+    {title:"季節的變化",mat:"紙張，彩色鉛筆",steps:["四個方框，分別代表四個季節。","在每個方框中畫出你生命中對應的「季節」。","你現在在哪個季節？"],refl:"這個季節需要你採取什麼行動？"},
+    {title:"山的恆常",mat:"紙張，灰/藍色鉛筆",steps:["畫一座山，包括它的陰影和光線。","標記你在山的哪個位置。","什麼站在山頂的視角能給你看到？"],refl:"從山頂，你的問題看起來有多大？"},
+    {title:"根與翅膀",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出你的根（讓你穩定的東西）。","用另一種顏色：畫出你的翅膀（讓你自由的東西）。","你更需要根還是翅膀？"],refl:"根和翅膀如何在你的生命中找到平衡？"},
+    {title:"星空地圖",mat:"紙張，深藍/金色鉛筆",steps:["畫出一片星空。","每顆星代表你生命中的一個「光點」——一個希望、一個夢想。","給你最明亮的星一個名字。"],refl:"你的「北極星」是什麼——最能指引你方向的那顆？"},
+    {title:"土地的滋養",mat:"紙張，棕/綠色鉛筆",steps:["畫出你生命的「土地」——讓你生根、給你養分的東西。","那片土地是什麼質地？什麼顏色？"],refl:"你的土地足夠滋養你嗎？如果不是，它缺少什麼？"},
+    {title:"風的信使",mat:"紙張，藍色鉛筆",steps:["想像風攜帶著一個信息給你。","畫出那陣風和它帶來的信息。","風從哪裡來？它要去哪裡？"],refl:"那個信息想告訴你什麼？"},
+    {title:"雨後彩虹",mat:"紙張，彩色鉛筆",steps:["畫出你生命中的一場「暴風雨」（困難時期）。","現在畫出雨後的彩虹——那個困難之後帶來的什麼？","彩虹的顏色代表你從困難中獲得的什麼？"],refl:"你生命中哪些彩虹是暗藏在你不期望的地方？"},
+    {title:"種子的信念",mat:"紙張，棕/綠色鉛筆",steps:["畫一粒種子深藏在土壤中——看不見，但蘊含著潛力。","在旁邊畫出那粒種子長成的樣子。","那粒種子代表你生命中的什麼？"],refl:"你現在在種植哪些種子，即使還看不到它們成長？"}
+  ]},
+  {num:3,name:"遊戲與幽默",icon:"🎮",desc:"遊戲是靈魂的語言。用輕鬆和幽默來療癒，不是逃避，而是通過喜悅重新連結生命。",exercises:[
+    {title:"荒誕的一天",mat:"紙張，彩色鉛筆",steps:["想像你生命中最荒誕有趣的場景。","把它畫出來，越誇張越好。","讓自己微笑或大笑。"],refl:"幽默如何改變了你對那個情況的感受？"},
+    {title:"我的內在孩子",mat:"紙張，彩色鉛筆",steps:["回憶你最快樂的童年遊戲。","以孩子的眼光畫出那個記憶。","讓那份純粹的歡樂重新活起來。"],refl:"你生命中的什麼地方還需要更多遊戲？"},
+    {title:"失誤的藝術",mat:"紙張，彩色鉛筆",steps:["故意畫一張「壞」畫——歪斜的線條、不協調的顏色。","繼續在那些「失誤」上增添，讓它們成為藝術。","給它起一個幽默的標題。"],refl:"「失誤」在什麼時候可以成為意外的美麗？"},
+    {title:"超級英雄的我",mat:"紙張，彩色鉛筆",steps:["創造你的超級英雄版本。","你的超能力是什麼？你的弱點是什麼？","給你的英雄設計一套服裝。"],refl:"你的超能力在日常生活中如何體現？"},
+    {title:"荒謬日記",mat:"紙張，鉛筆",steps:["想像你的煩惱縮小到了螞蟻的大小。","把它畫出來——那個微小的煩惱。","在它周圍畫出更大的現實。"],refl:"從更大的視角看，你的煩惱感覺多大？"},
+    {title:"反轉視角",mat:"紙張，兩種不同顏色",steps:["選擇一個你覺得困難的情況。","以喜劇的眼光重新繪製那個情況。","找到其中荒誕或幽默的元素。"],refl:"在每個困難中，是否隱藏著某種喜劇成分？"},
+    {title:"夢幻地圖",mat:"紙張，彩色鉛筆",steps:["畫一張完全不可能的地圖——飛翔島、巧克力山、彩虹瀑布。","這是你的「理想國」。","在地圖上放置你自己。"],refl:"你的「理想國」告訴你什麼關於你真正渴望的東西？"},
+    {title:"童年玩具",mat:"紙張，彩色鉛筆",steps:["畫出你童年最喜歡的玩具或遊戲。","那個玩具給了你什麼？","它如何體現了你的想象力？"],refl:"那種想象力今天在你生活的什麼地方還存在？"},
+    {title:"爆笑失誤清單",mat:"紙張，彩色鉛筆",steps:["回想你曾經犯過的一個有趣的錯誤（現在回想起來很好笑）。","以視覺形式描繪那個情況。","找到其中的幽默。"],refl:"隨著時間的推移，哪些錯誤從「糟糕」變成了「珍貴」？"},
+    {title:"快樂存款",mat:"紙張，彩色鉛筆",steps:["畫一個「快樂銀行」。","在裡面存入今天你可以送給自己的 5 個小快樂。","每個快樂都是一個小硬幣或鈔票的形狀。"],refl:"你的快樂存款是豐富還是貧乏？你可以做什麼來增加存款？"}
+  ]},
+  {num:4,name:"陰影與光明",icon:"🌓",desc:"每道光都投下陰影。整合我們的黑暗面，才能活出完整的自己。",exercises:[
+    {title:"我的陰影",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出你向世界展示的「光明」面。","用另一種顏色：畫出你通常隱藏的「陰影」面。","觀察兩者如何構成完整的你。"],refl:"你的陰影告訴你什麼關於你被壓制的需求？"},
+    {title:"夜晚的禮物",mat:"紙張，深色鉛筆",steps:["夜晚常常帶來困難的想法和感受。","畫出一個夜晚的場景，包括黑暗和星光。","黑暗中有什麼禮物？"],refl:"在你最黑暗的夜晚，你學到了什麼？"},
+    {title:"光與影舞蹈",mat:"紙張，兩種不同顏色",steps:["用明亮顏色和暗色調交替繪畫。","讓光和影在紙上共舞。","觀察它們如何相互依存。"],refl:"在你的生命中，光和影是如何共舞的？"},
+    {title:"隱藏的顏色",mat:"紙張，彩色鉛筆",steps:["先用深色塗滿整張紙。","在上面用明亮顏色畫出圖案。","觀察明亮如何從黑暗中浮現。"],refl:"在你的黑暗經歷中，哪些明亮的東西浮現了？"},
+    {title:"我的黑暗素材",mat:"紙張，炭筆或深色鉛筆",steps:["每個人都有一些不想面對的「黑暗素材」。","給那個素材一個形狀和形式。","它想告訴你什麼？"],refl:"如果你更完全地承認你的黑暗面，你可能能做什麼？"},
+    {title:"陰影的智慧",mat:"紙張，兩種不同顏色",steps:["你的陰影（你壓制的部分）通常含有被壓制的能量。","畫出你的陰影，問它：「你有什麼禮物？」","將那個能量轉化為建設性的形式。"],refl:"你的陰影中蘊含著什麼未被認可的力量或智慧？"},
+    {title:"光明的觸點",mat:"紙張，明亮顏色鉛筆",steps:["即使在最困難的時期，也總有一點光。","回想你最困難的時期，找到那一點光。","以視覺形式放大那一點光。"],refl:"你生命中從未失去的「光明觸點」是什麼？"},
+    {title:"月亮週期",mat:"紙張，藍/銀色鉛筆",steps:["畫出月亮的四個階段（新月、上弦月、滿月、下弦月）。","每個階段代表你情感週期的一個部分。","你現在在哪個月相？"],refl:"你如何更接受自己情感週期的「黑暗相位」？"},
+    {title:"橋接黑暗與光明",mat:"紙張，兩種不同顏色",steps:["用一種顏色代表你的困境，用另一種代表你渴望的狀態。","在兩者之間畫一座橋。","橋上有什麼？"],refl:"建立那座橋的第一個小步驟是什麼？"},
+    {title:"整合的肖像",mat:"紙張，彩色鉛筆",steps:["畫一個自畫像，同時包括你的光明面和陰影面。","讓兩者都是美麗和尊嚴的。","給這幅整合的肖像取一個標題。"],refl:"接受自己的完整，包括陰影，感覺如何？"}
+  ]},
+  {num:5,name:"界限與自由",icon:"🔑",desc:"健康的界限不是監獄，而是讓真正的自由成為可能的結構。",exercises:[
+    {title:"我的空間",mat:"紙張，彩色鉛筆",steps:["畫一個代表「你的空間」的形狀。","在空間內：你的核心（什麼屬於你？）。","在邊界：什麼是界限？什麼不能進入？"],refl:"你的空間有多大？你是否允許自己佔有足夠的空間？"},
+    {title:"界限的形狀",mat:"紙張，彩色鉛筆",steps:["想想一個你需要設定更清晰界限的情況。","畫出那個界限——它是牆、籬笆、彩帶還是別的什麼？","那個界限感覺健康嗎？"],refl:"健康的界限和過度隔離之間的區別是什麼？"},
+    {title:"能量漏洞",mat:"紙張，彩色鉛筆",steps:["想想誰或什麼在消耗你的能量。","畫出你的能量「容器」，標記漏洞在哪裡。","什麼可以修補那些漏洞？"],refl:"哪個能量漏洞最影響你的健康？"},
+    {title:"自由的感覺",mat:"紙張，彩色鉛筆",steps:["回憶一個你感到完全自由的時刻。","以視覺形式呈現那種自由的感覺——顏色、形狀、動作。","那種自由的本質是什麼？"],refl:"你生命中的什麼地方最需要更多那種自由？"},
+    {title:"說「不」的力量",mat:"紙張，兩種不同顏色",steps:["想想一個你說過「不」並且感覺好的時刻。","用一種顏色：畫出說「不」之前的感覺。","用另一種顏色：畫出說「不」之後的感覺。"],refl:"說「不」保護了你和你的精力的什麼？"},
+    {title:"必要的結構",mat:"紙張，鉛筆",steps:["創意需要結構——一個安全的框架才能在其中繁榮。","畫一個框架或結構（如建築的骨架）。","在框架內填入你的創意表達。"],refl:"你生命中哪些結構支持你的自由？"},
+    {title:"誰進來，誰出去",mat:"紙張，彩色鉛筆",steps:["在頁面中央畫「你」的圓圈。","圈內：誰有進入你親密圈子的通行證？","圈外：誰需要更遠的距離？"],refl:"你的圈子目前的構成讓你感到充實還是疲憊？"},
+    {title:"重新設定空間",mat:"紙張，彩色鉛筆",steps:["想像你可以重新設計你的「內在空間」。","什麼需要更多空間？什麼需要更少空間？","以視覺形式呈現你理想的內在空間分配。"],refl:"在你的內心世界，哪個方面最需要重新分配空間？"},
+    {title:"自由的代價",mat:"紙張，兩種不同顏色",steps:["有時自由需要放棄某些安全感。","用一種顏色：畫出你為了安全放棄的自由。","用另一種顏色：畫出你為了自由必須接受的不確定性。"],refl:"這個交換對你來說是否值得？"},
+    {title:"我的核心界限",mat:"紙張，彩色鉛筆",steps:["思考你最核心的兩個界限——任何關係中都不可妥協的。","以視覺形式呈現那些界限。","給它們以尊嚴和力量。"],refl:"這些核心界限代表了你最深的什麼價值觀？"}
+  ]},
+  {num:6,name:"時間與變化",icon:"⏳",desc:"時間是最偉大的藝術家。接受變化和流動，是通往平靜的道路。",exercises:[
+    {title:"過去、現在、未來",mat:"紙張，三種顏色",steps:["三個部分：用一種顏色畫過去，一種畫現在，一種畫未來。","每個部分：一個象徵性的圖像。","觀察三個部分如何流動。"],refl:"哪個時態讓你最長時間停留其中？"},
+    {title:"時間的感知",mat:"紙張，彩色鉛筆",steps:["回想一週中「時間飛逝」的時刻。","回想一週中「時間停滯」的時刻。","以視覺形式呈現兩者的差異。"],refl:"在什麼活動中你最活在當下？"},
+    {title:"季節的更迭",mat:"紙張，彩色鉛筆",steps:["畫出你生命中當前的「季節」。","那個季節有什麼特質？什麼正在結束？什麼正在開始？","下一個季節是什麼？"],refl:"你如何為即將到來的季節做好準備？"},
+    {title:"遺失的時刻",mat:"紙張，鉛筆",steps:["想想一個你希望曾更完全活在其中的過去時刻。","畫出那個時刻，彷彿你完全在場。","那個時刻想要告訴你什麼？"],refl:"現在，你有哪個時刻需要更完全地活在其中？"},
+    {title:"變化的曲線",mat:"紙張，彩色鉛筆",steps:["所有變化都有一個曲線：抵抗、混亂、整合、成長。","畫出你目前生活中一個變化的曲線。","你在曲線的哪個位置？"],refl:"理解你在變化曲線的哪個位置，如何改變你對它的看法？"},
+    {title:"此刻的永恆",mat:"紙張，彩色鉛筆",steps:["閉眼，完全停留在此刻 2 分鐘。","睜眼，立刻畫出那個此刻的感覺。","這個此刻是否包含某種永恆的元素？"],refl:"此刻有什麼即使隨時間流逝也會保留的東西？"},
+    {title:"快速時刻",mat:"紙張，快速筆觸",steps:["給自己 60 秒。","快速畫出今天最讓你感到生機勃勃的時刻。","那個時刻的核心是什麼？"],refl:"你生命中最有活力的時刻有什麼共同點？"},
+    {title:"慢速欣賞",mat:"紙張，細字筆",steps:["選擇一個簡單的物品（杯子、花、手）。","非常慢地、非常仔細地畫它——5 分鐘。","注意每個細節。"],refl:"放慢速度讓你看到了什麼平時忽略的美麗？"},
+    {title:"時間禮物",mat:"紙張，彩色鉛筆",steps:["今天，你有什麼時間要給予自己？","以視覺形式呈現那個「時間禮物」。","那個時間裡，你最想做什麼？"],refl:"你給自己充足的時間嗎？如果不是，什麼阻止了你？"},
+    {title:"遺忘的藝術",mat:"紙張，兩種不同顏色",steps:["有時我們需要忘記——讓過去真正成為過去。","用一種顏色：畫出你想忘記的東西。","用另一種顏色：畫出「遺忘」之後留下的空間。"],refl:"遺忘是逃避還是釋放？兩者有什麼區別？"}
+  ]},
+  {num:7,name:"故事與敘事",icon:"📖",desc:"我們都是自己故事的作者。藝術治療幫助你重新書寫那些限制你的故事。",exercises:[
+    {title:"我的故事標題",mat:"紙張，彩色鉛筆",steps:["如果你生命的這個章節是一本書，它的標題是什麼？","設計那本書的封面。","主角（你）是什麼樣的？"],refl:"你想讓這本書的結局是什麼？"},
+    {title:"重寫的結局",mat:"紙張，兩種不同顏色",steps:["想一個你還在重複的舊故事或模式。","用一種顏色：畫出舊故事。","用另一種顏色：畫出你想重寫的新版本。"],refl:"為什麼你有時繼續重演不再服務你的故事？"},
+    {title:"主角的旅程",mat:"紙張，鉛筆",steps:["每個偉大的故事都有一個旅程（呼喚、挑戰、轉化、歸來）。","把你的生命畫成一個英雄旅程。","你在旅程的哪個階段？"],refl:"你的旅程的核心挑戰是什麼？它正在把你變成什麼？"},
+    {title:"反派的禮物",mat:"紙張，彩色鉛筆",steps:["每個故事都需要一個「反派」——一個讓你成長的障礙。","你故事中的反派是誰或什麼？","那個反派給了你什麼禮物？"],refl:"如果你從主角的角度而非受害者的角度重新講述你的故事，它會如何改變？"},
+    {title:"最古老的故事",mat:"紙張，鉛筆",steps:["你從童年帶來的最古老的「故事」是什麼（關於自己、世界、愛）？","那個故事今天還服務你嗎？","以視覺形式探索那個故事的起源和影響。"],refl:"你準備好更新那個最古老的故事嗎？"},
+    {title:"多個觀點",mat:"紙張，彩色鉛筆",steps:["選擇一個你生命中的困難情況。","從三個不同人物的視角畫出那個情況（例如：你自己、一個旁觀者、未來的你）。","觀察觀點如何改變故事。"],refl:"從哪個觀點看，那個情況最有意義？"},
+    {title:"隱喻地圖",mat:"紙張，彩色鉛筆",steps:["創造一個以你正在經歷的內容命名的「地方」（例如：「倦怠之谷」、「力量高原」）。","畫出那個地方的地圖。","你想去的下一個地方是什麼？"],refl:"這個地理隱喻如何幫助你理解你的情感狀態？"},
+    {title:"聲音的收藏",mat:"紙張，鉛筆",steps:["在你腦中，哪些聲音（人們對你說過的話）仍然迴響？","以視覺形式呈現那些聲音。","哪些聲音對你有益？哪些需要靜音？"],refl:"你最需要靜音哪個聲音？如何做到？"},
+    {title:"療癒故事",mat:"紙張，彩色鉛筆",steps:["創作一個關於一個人克服你正在面對的挑戰的視覺故事。","那個人使用了什麼力量和資源？","你可以從那個故事中汲取什麼？"],refl:"在你的故事中，療癒的核心元素是什麼？"},
+    {title:"我的遺作",mat:"大張紙，彩色鉛筆",steps:["想像你的生命已經很完整，你想留給世界什麼故事？","以視覺形式呈現你的「遺作」——你想如何被記住。","你每天是否在活出那個故事？"],refl:"你的日常行動是否在書寫你想留下的故事？"}
+  ]},
+  {num:8,name:"連結與孤獨",icon:"🌉",desc:"我們既需要連結，也需要孤獨。在兩者之間找到健康的平衡是自我照顧的關鍵。",exercises:[
+    {title:"連結的蜘蛛網",mat:"紙張，彩色鉛筆",steps:["在頁面中央畫你自己。","畫出你與不同人和事物的連結線。","哪些連結讓你充滿能量？哪些讓你疲憊？"],refl:"你的連結網給你帶來什麼，消耗你什麼？"},
+    {title:"孤獨的質感",mat:"紙張，彩色鉛筆",steps:["孤獨可以是滋養的，也可以是孤立的。","畫出兩種孤獨——滋養的和孤立的。","每種有什麼不同的顏色和質感？"],refl:"你如何區分有益的孤獨和有害的隔離？"},
+    {title:"我的部落",mat:"紙張，彩色鉛筆",steps:["畫出你理想的「部落」——理解你、支持你、與你共同成長的人。","你的部落現在有誰？還缺少誰？","如何吸引你想要的人進入你的部落？"],refl:"你是否有一個真正的部落？如果沒有，第一步可以做什麼？"},
+    {title:"孤獨之旅",mat:"紙張，藍色鉛筆",steps:["想像你獨自踏上一段旅程（真實或隱喻的）。","畫出那段旅程的地圖。","你在旅途中會發現什麼關於自己的東西？"],refl:"在孤獨中，你最能聽到什麼內在聲音？"},
+    {title:"橋與牆",mat:"紙張，兩種不同顏色",steps:["在關係中，我們同時建造橋（連結）和牆（保護）。","用一種顏色：畫出你在關係中建立的橋。","用另一種顏色：畫出你豎立的牆。"],refl:"你的橋和牆是否達到了健康的平衡？"},
+    {title:"看見和被看見",mat:"紙張，彩色鉛筆",steps:["想想一個你完全被看見和理解的時刻。","以視覺形式呈現那種被看見的感覺。","那種感覺在你身體的什麼地方？"],refl:"你在哪些關係中可以完全做自己？"},
+    {title:"我最需要的連結",mat:"紙張，彩色鉛筆",steps:["思考你目前最缺少的連結類型（親密、智識、精神、娛樂）。","以視覺形式呈現那種缺失的連結。","你可以採取什麼小步驟來找到那種連結？"],refl:"這種連結的缺失如何影響你的整體健康？"},
+    {title:"充電與放電",mat:"紙張，彩色鉛筆",steps:["對你來說，哪些社交情況讓你充電？哪些讓你放電？","以視覺形式呈現兩種類型。","你的生活中兩種比例是否平衡？"],refl:"你如何為自己創造更多充電的社交時間？"},
+    {title:"我對自己的承諾",mat:"紙張，彩色鉛筆",steps:["孤獨也是與自己連結的機會。","給自己寫一封簡短的承諾信。","以視覺形式封上那份承諾。"],refl:"你對自己最重要的承諾是什麼，你是否在履行它？"},
+    {title:"連結的象徵",mat:"紙張，彩色鉛筆",steps:["思考你生命中最深的連結（人、自然、精神、自己）。","為每種連結創造一個獨特的象徵符號。","讓這些符號構成你的「連結圖騰」。"],refl:"哪種連結對你整個生命的意義最深？"}
+  ]},
+  {num:9,name:"力量與脆弱",icon:"💎",desc:"真正的力量不是沒有脆弱，而是允許脆弱同時保持完整。",exercises:[
+    {title:"脆弱的勇氣",mat:"紙張，彩色鉛筆",steps:["回憶一次你允許自己脆弱的時刻。","以視覺形式呈現那種脆弱和伴隨它的勇氣。","那個脆弱的時刻帶來了什麼？"],refl:"脆弱讓你失去了什麼？又帶來了什麼？"},
+    {title:"盔甲之下",mat:"紙張，兩種不同顏色",steps:["每個人都有保護自己的「盔甲」。","用一種顏色：畫出你的盔甲（保護機制）。","用另一種顏色：畫出盔甲之下的脆弱核心。"],refl:"你的盔甲在保護什麼？它的代價是什麼？"},
+    {title:"強壯的根源",mat:"紙張，棕色鉛筆",steps:["你的力量是從哪裡來的？","畫出你力量的根源——滋養你的土壤、讓你根深紮實的東西。","那些根源有多穩固？"],refl:"在最困難的時期，什麼根源支撐了你？"},
+    {title:"脆弱的美麗",mat:"紙張，溫柔顏色",steps:["脆弱有一種特殊的美麗。","以視覺形式呈現「脆弱的美麗」——它的質感、顏色、感受。","那種美麗在哪裡出現在你的生活中？"],refl:"看到他人脆弱時，你感受到什麼？你對自己的脆弱有同等的慈悲嗎？"},
+    {title:"倒下與再站起",mat:"紙張，兩種不同顏色",steps:["回憶一次你「倒下」的時刻（失敗、傷心、挫折）。","用一種顏色：畫出那個倒下的時刻。","用另一種顏色：畫出你再站起來的方式。"],refl:"你是如何站起來的？什麼力量在你倒下時依然在那裡？"},
+    {title:"內在戰士",mat:"紙張，強烈顏色",steps:["每個人內心都有一個戰士——勇敢、韌性、意志力。","畫出你的內在戰士。","戰士最大的力量是什麼？"],refl:"你的戰士什麼時候最需要出現？它通常有多容易召喚？"},
+    {title:"軟化",mat:"紙張，溫柔顏色",steps:["有時我們需要軟化——允許自己不再堅硬。","以視覺形式呈現「軟化」——從緊張到放鬆、從封閉到開放。","軟化需要什麼勇氣？"],refl:"在哪些情況下，軟化比堅硬更需要力量？"},
+    {title:"韌性之源",mat:"紙張，彩色鉛筆",steps:["韌性不是從不倒下，而是每次都能站起來。","畫出你韌性的象徵——什麼圖像代表你的能力在困難後站起來？","那個韌性的根源是什麼？"],refl:"你的韌性是天生的，還是後天磨練出來的？或兩者都有？"},
+    {title:"充許不完美",mat:"紙張，彩色鉛筆",steps:["故意畫一幅「不完美」的自畫像——放棄對美麗的追求。","讓不完美在那裡，不去修正它。","觀察不完美的肖像。"],refl:"不完美的自畫像是否仍然有某種真實的美麗？"},
+    {title:"完整的我",mat:"大張紙，彩色鉛筆",steps:["創作一幅代表你全部的藝術作品——力量和脆弱、光明和陰影、喜悅和悲傷。","讓所有部分都有空間。","給這幅完整的你取一個標題。"],refl:"看著這幅完整的自畫像，你感受到什麼？"}
+  ]},
+  {num:10,name:"感恩與奇蹟",icon:"✨",desc:"感恩是靈魂的語言。在日常中看見奇蹟，是通往豐盛感的最短路徑。",exercises:[
+    {title:"今日的小奇蹟",mat:"紙張，彩色鉛筆",steps:["尋找今天的一個「小奇蹟」——通常被忽視的美麗時刻。","以視覺形式呈現那個奇蹟。","那個奇蹟讓你感受到什麼？"],refl:"如果你每天都尋找一個小奇蹟，你的生活感知會如何改變？"},
+    {title:"感恩萬花筒",mat:"紙張，彩色鉛筆",steps:["畫一個萬花筒圖案。","在每個部分：一件你感激的事物（人、經歷、特質）。","讓顏色反映你的感激深度。"],refl:"當你看著這個感恩萬花筒時，你感受到什麼？"},
+    {title:"平凡的神聖",mat:"紙張，彩色鉛筆",steps:["選擇一個完全平凡的物品（杯子、窗戶、樹葉）。","以藝術的眼光畫出它——看見它的神聖之處。","那個物品告訴你什麼？"],refl:"在平凡中看見神聖需要什麼？"},
+    {title:"我的豐盛地圖",mat:"紙張，彩色鉛筆",steps:["在頁面中央寫「豐盛」。","畫出延伸到你生命中各種豐盛的線條（關係、能力、機會、自然、記憶）。","豐盛有多少種形式？"],refl:"在你的生命中，豐盛的哪種形式是你最常忽視的？"},
+    {title:"感激的波紋",mat:"紙張，彩色鉛筆",steps:["想想一個深深感激的人或事物。","畫出感激從你向外擴散的波紋。","感激如何影響你周圍的一切？"],refl:"你的感激如何改變你與那個人或事物的關係？"},
+    {title:"奇蹟時刻收藏",mat:"紙張，彩色鉛筆",steps:["回顧這一週。","找到 5 個雖小但真實的「奇蹟時刻」（意外的美麗、同步性、幸運）。","以視覺形式收藏那些時刻。"],refl:"當你開始尋找奇蹟時，它們是否開始更頻繁地出現？"},
+    {title:"我最珍貴的禮物",mat:"紙張，彩色鉛筆",steps:["思考你生命中最珍貴的「禮物」（不是物質的，而是無形的）。","以視覺形式呈現那些禮物。","那些禮物是如何來到你生命中的？"],refl:"那些珍貴的禮物你是否充分感激和使用了？"},
+    {title:"此刻已足夠",mat:"紙張，溫暖顏色",steps:["在這個時刻，就這樣，停下來。","以視覺形式呈現「此刻已足夠」的感覺。","那種感覺存在於你身體的哪個部分？"],refl:"「此刻已足夠」這個想法對你有多難接受？是什麼阻止了你？"},
+    {title:"感謝之旅",mat:"大張紙，彩色鉛筆",steps:["創作一幅感謝之旅的視覺地圖。","包括你感謝的人、地方、經歷和特質。","讓這幅地圖成為你生命禮物的可視化記錄。"],refl:"看著這幅地圖，你感受到什麼？你的生命是否比你有時意識到的更豐富？"},
+    {title:"我是奇蹟",mat:"紙張，彩色鉛筆",steps:["閉眼，考慮一下：你的存在本身是宇宙中的一個奇蹟。","以視覺形式呈現「你是一個奇蹟」。","讓這幅畫充滿尊嚴、光明和感恩。"],refl:"如果你每天早晨醒來都記住自己是一個奇蹟，你會如何不同地開始一天？"}
+  ]}
+];
+var C = document.getElementById('ex-container');
+THEMES2.forEach(function(T) {
+  var ti = document.createElement('div');
+  ti.className = 'page theme-intro';
+  ti.innerHTML = '<div class="theme-intro-badge">第二版 · 主題 '+T.num+' / 10</div><h2>'+T.icon+' '+T.name+'</h2><p>'+T.desc+'</p><div class="theme-intro-count">'+T.exercises.length+' 個練習</div>';
+  C.appendChild(ti);
+  T.exercises.forEach(function(ex, i) {
+    var pg = document.createElement('div');
+    pg.className = 'page ex-page';
+    var stepsHtml = ex.steps.map(function(s, si) {
+      return '<div class="ex-step"><div class="ex-step-n">'+(si+1)+'</div><p>'+s+'</p></div>';
+    }).join('');
+    pg.innerHTML = '<div class="ex-header"><span class="ex-topic">⭐ '+T.name+'</span><span class="ex-num">練習 '+(i+1)+' / '+T.exercises.length+'</span></div>'
+      + '<div class="ex-title">'+ex.title+'</div>'
+      + '<div class="ex-materials"><span>需要：</span>'+ex.mat+'</div>'
+      + '<div class="ex-steps">'+stepsHtml+'</div>'
+      + '<div class="ex-space"></div>'
+      + '<div class="ex-reflection"><div class="ex-reflection-label">💭 反思</div><p>'+ex.refl+'</p></div>';
+    C.appendChild(pg);
+  });
+});
+</script>
+</body>
+</html>

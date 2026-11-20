@@ -1,31 +1,174 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>你的訪問權限 — 家庭藝術治療</title>
+<title>家庭藝術治療 — 65 個活動</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  html, body { margin:0; background:#FAF7F2; color:#2B2522; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans TC",sans-serif; }
-  .wrap { max-width:560px; margin:0 auto; padding:64px 20px; text-align:center; }
-  .badge { display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; background:#EFE6DA; padding:6px 12px; border-radius:99px; }
-  h1 { font-size:28px; line-height:1.3; margin:18px 0 10px; }
-  p { font-size:17px; line-height:1.55; color:#5B514B; }
-  .card { background:#fff; border:1px solid #EAE0D5; border-radius:16px; padding:24px 20px; margin-top:28px; }
-  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:#1F9D55; margin-right:8px; animation:pulse 1.6s infinite; }
-  @keyframes pulse { 50% { opacity:.3; } }
-  @media (prefers-reduced-motion: reduce) { .dot { animation:none; } }
+@page { size: 210mm 297mm; margin: 0; }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root { --bg:#FFF8F4;--lav:#D9C9F7;--lavd:#B89FE0;--pink:#F3B8D2;--gold:#C9A84C;--title:#4E4036;--body:#6F6258;--body2:#8A7A70;--green:#5BAA7A;--blue:#6B9ED4;--ft:'Noto Serif TC',serif;--fb:'Noto Sans TC',sans-serif; }
+body { font-family:var(--fb); color:var(--body); background:var(--bg); }
+.page { width:210mm; min-height:297mm; position:relative; page-break-after:always; overflow:hidden; display:flex; flex-direction:column; }
+.cover { background:linear-gradient(145deg,#4E4036 0%,#6B9ED4 50%,#5BAA7A 100%); align-items:center; justify-content:center; text-align:center; padding:34mm 20mm; }
+.cover-badge { display:inline-block; background:rgba(107,158,212,.25); border:1px solid #9dc3e8; color:#9dc3e8; font-size:9pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:5px 18px; border-radius:20px; margin-bottom:20px; }
+.cover h1 { font-family:var(--ft); font-size:28pt; color:#fff; line-height:1.3; margin-bottom:12px; }
+.cover p { font-size:11pt; color:rgba(255,255,255,.85); margin-bottom:24px; line-height:1.5; }
+.cover-pill { display:inline-block; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.35); color:#fff; padding:7px 20px; border-radius:24px; font-size:9pt; font-weight:600; margin:3px; }
+.toc-page { background:#fff; padding:16mm 18mm; }
+.toc-h2 { font-family:var(--ft); font-size:20pt; color:var(--title); margin-bottom:6mm; border-bottom:2px solid var(--lav); padding-bottom:4mm; }
+.toc-section { display:flex; justify-content:space-between; align-items:center; padding:4mm 0; border-bottom:1px solid #f0e8e0; }
+.toc-label { display:flex; align-items:center; gap:10px; }
+.toc-icon { width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11pt; flex-shrink:0; }
+.toc-name { font-size:11pt; color:var(--title); font-weight:600; }
+.toc-sub { font-size:8.5pt; color:var(--body2); }
+.toc-count { font-size:9pt; font-weight:700; color:var(--gold); }
+.section-header { align-items:center; justify-content:center; text-align:center; padding:28mm 20mm; }
+.ex-page { background:#fff; padding:12mm 18mm; }
+.ex-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:5mm; padding-bottom:3mm; border-bottom:2px solid var(--lav); }
+.ex-topic { font-size:8pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+.ex-num { font-size:8pt; color:var(--body2); }
+.ex-title { font-family:var(--ft); font-size:16pt; color:var(--title); margin-bottom:3mm; line-height:1.3; }
+.ex-age { display:inline-block; border-radius:16px; padding:3px 10px; font-size:8pt; font-weight:700; margin-bottom:4mm; }
+.ex-materials { display:flex; align-items:flex-start; gap:8px; background:#f5f0e8; border-radius:8px; padding:6px 10px; margin-bottom:4mm; font-size:9pt; color:var(--body2); }
+.ex-materials span { font-weight:700; color:var(--gold); flex-shrink:0; }
+.ex-steps { display:flex; flex-direction:column; gap:2.5mm; margin-bottom:4mm; }
+.ex-step { display:flex; gap:8px; align-items:flex-start; }
+.ex-step-n { width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:7.5pt; font-weight:700; color:#fff; flex-shrink:0; margin-top:1px; }
+.ex-step p { font-size:9.5pt; color:var(--body); line-height:1.5; }
+.ex-space { flex:1; border:1.5px dashed #d9c9f7; border-radius:8px; min-height:50mm; }
+.ex-tip { background:linear-gradient(135deg,#f5f0e8,#f0ebff); border-radius:8px; padding:6px 10px; margin-top:3mm; font-size:9pt; color:var(--body); line-height:1.5; }
+@media print { .no-print { display:none!important; } }
+@media screen { body { background:#e0d8d0; padding:20px; } .page { margin:0 auto 20px; box-shadow:0 4px 20px rgba(0,0,0,.2); } .print-btn { position:fixed; bottom:24px; right:24px; background:#4E4036; color:var(--gold); border:none; border-radius:50px; padding:14px 28px; font-size:14px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(78,64,54,.5); z-index:1000; } }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <span class="badge">購買已確認</span>
-    <h1>家庭藝術治療 — 65個活動給兒童、青少年和伴侶</h1>
-    <p>謝謝你！我們正在準備你的所有資料。這個頁面很快就會更新，包含你的文件。</p>
-    <div class="card">
-      <p><span class="dot"></span><strong>請保存這個連結</strong></p>
-      <p>這是你終身訪問的連結。請在幾小時內回來，你將找到你購買的產品。</p>
-    </div>
+<button class="print-btn no-print" onclick="window.print()">🖨️ 列印 / 儲存 PDF</button>
+<div class="page cover">
+  <div class="cover-badge">👨‍👩‍👧 升級版 · OTO</div>
+  <h1>家庭藝術治療</h1>
+  <p>65 個活動：孩子 · 青少年 · 伴侶</p>
+  <div>
+    <span class="cover-pill">🧒 兒童 25 個</span>
+    <span class="cover-pill">🧑‍🎓 青少年 20 個</span>
+    <span class="cover-pill">💑 伴侶 20 個</span>
   </div>
+</div>
+<div class="page toc-page">
+  <div class="toc-h2">📋 目錄</div>
+  <div class="toc-section"><div class="toc-label"><div class="toc-icon" style="background:#fde8c0;">🧒</div><div><div class="toc-name">第一部分：兒童活動</div><div class="toc-sub">適合 4-12 歲 · 情感探索 + 表達</div></div></div><div class="toc-count">25 個活動</div></div>
+  <div class="toc-section"><div class="toc-label"><div class="toc-icon" style="background:#d9f0e6;">🧑‍🎓</div><div><div class="toc-name">第二部分：青少年活動</div><div class="toc-sub">適合 13-18 歲 · 身份認同 + 壓力</div></div></div><div class="toc-count">20 個活動</div></div>
+  <div class="toc-section"><div class="toc-label"><div class="toc-icon" style="background:#f3d5e8;">💑</div><div><div class="toc-name">第三部分：伴侶活動</div><div class="toc-sub">增進連結 + 溝通</div></div></div><div class="toc-count">20 個活動</div></div>
+</div>
+<div id="family-container"></div>
+<script>
+var sections = [
+  {id:"kids",title:"兒童活動",icon:"🧒",color:"#C9A84C",bg:"linear-gradient(145deg,#C9A84C,#8a6a2a)",age:"4–12 歲",desc:"這些活動幫助孩子識別和表達情感，建立情緒調節能力，並通過藝術探索他們的內心世界。",exercises:[
+    {title:"情感天氣預報",mat:"紙張，彩色鉛筆",steps:["問孩子：「如果你今天的心情是天氣，它是什麼天氣？」","讓孩子畫出那個天氣場景。","問：「你的天氣裡有什麼顏色？有沒有太陽躲在雲後面？」"],tip:"不要試圖「解決」壞天氣——只是好奇地聆聽。"},
+    {title:"我的顏色家族",mat:"紙張，蠟筆",steps:["讓孩子選一種顏色代表家裡的每個成員。","畫出每個顏色，並解釋為什麼那個顏色適合那個人。","一起討論：「如果我們所有的顏色混在一起，會是什麼顏色？」"],tip:"讓孩子解釋，不要糾正他們的選擇。"},
+    {title:"憤怒怪獸",mat:"紙張，彩色鉛筆",steps:["當孩子生氣時（或之後），請他畫出他的「憤怒怪獸」。","怪獸長什麼樣？有多大？有什麼超能力？","問：「你的怪獸需要什麼才能平靜下來？」"],tip:"把憤怒外化成怪獸可以讓孩子與情感保持距離。"},
+    {title:"我的安全堡壘",mat:"大張紙，彩色鉛筆",steps:["讓孩子設計一個讓他感到「絕對安全」的地方。","那個地方有什麼特點？誰可以進來？","鼓勵孩子詳細描述這個地方的細節。"],tip:"那個安全地方可以成為孩子心理安全感的象徵資源。"},
+    {title:"超能力設計",mat:"紙張，彩色鉛筆",steps:["讓孩子設計他們的超級英雄版本。","那個英雄的超能力是什麼？弱點是什麼？","超能力如何幫助他們在學校或家裡？"],tip:"超能力通常代表孩子的核心力量和願望。"},
+    {title:"我的優點樹",mat:"紙張，彩色鉛筆",steps:["畫一棵樹。","樹幹上：我是誰（名字、年齡、喜歡的東西）。","樹葉上：我的優點和特別之處（大人可以提示但不要代替）。"],tip:"每片樹葉寫一個真實的優點，讓孩子感到自豪。"},
+    {title:"家庭星系",mat:"紙張，彩色鉛筆",steps:["在頁面中央畫家裡的每個成員（作為星球或星星）。","大小代表「在你生命中的重要性」，距離代表「親密感」。","問：「你想把哪顆星球移近一點？」"],tip:"這個練習能揭示孩子對家庭動態的感知。"},
+    {title:"情感天氣日記",mat:"小本子，蠟筆",steps:["每天，讓孩子畫一個小圖標代表他們的情感天氣。","鼓勵他們在旁邊用 1-2 個詞描述為什麼。","每週五一起回顧那週的天氣。"],tip:"這培養情感覺知和語言表達能力。"},
+    {title:"恐懼變小怪獸",mat:"紙張，彩色鉛筆",steps:["讓孩子畫出他們最大的恐懼（以怪獸或形狀的形式）。","然後，讓它變小，越來越小，直到它可以放在手掌上。","問：「當恐懼變小了，你可以怎麼對待它？」"],tip:"讓孩子感覺自己比恐懼大。"},
+    {title:"心的肖像",mat:"紙張，彩色鉛筆",steps:["在頁面中央畫一個大心形。","在心裡面，畫出你最愛的人和事物。","在心的外面，畫出讓你的心感到安全的東西。"],tip:"這個練習幫助孩子連結他們的「愛的資源」。"},
+    {title:"情感顏色書",mat:"白紙，彩色鉛筆，釘書機",steps:["做一本小書，每頁一種情感。","每頁：情感名字、那種情感的顏色、一個小故事或場景。","鼓勵孩子隨時間添加新頁面。"],tip:"給情感命名和上色是情緒調節的基礎技能。"},
+    {title:"我的力量動物",mat:"紙張，彩色鉛筆",steps:["問孩子：「如果你有一個力量動物，它會是什麼？」","畫出那個動物，包括它的特殊力量。","問：「當你需要那個動物的力量時，你會怎麼做？」"],tip:"力量動物可以成為孩子內在力量的象徵。"},
+    {title:"我最驕傲的一天",mat:"紙張，彩色鉛筆",steps:["讓孩子回憶讓他最驕傲的一天。","畫出那一天最重要的場景。","讓孩子描述他做了什麼讓他感到驕傲。"],tip:"強調孩子的能動性——他做了什麼，不是發生了什麼。"},
+    {title:"「不」的練習",mat:"紙張，彩色鉛筆",steps:["和孩子一起討論：什麼時候說「不」是好的？","讓孩子畫出一個他可以對其說「不」的情況。","練習說「不謝謝」和「我不想要」。"],tip:"這培養孩子的健康界限感。"},
+    {title:"未來的我",mat:"紙張，彩色鉛筆",steps:["問孩子：「長大後你最希望成為什麼樣的人？」","畫出那個未來的自己。","問：「現在你可以做什麼，讓你越來越像那個人？」"],tip:"聚焦在「他/她是什麼樣的人」而不是「他/她做什麼工作」。"},
+    {title:"我的願望罐",mat:"白紙，彩色鉛筆，剪刀，玻璃罐",steps:["讓孩子畫出並剪下 5 個他的願望。","把它們折好放進罐子裡。","每隔一段時間，一起打開罐子，看看哪些願望實現了。"],tip:"這個活動培養希望感和夢想的能力。"},
+    {title:"家庭規則壁畫",mat:"大張紙，彩色鉛筆",steps:["一起討論：我們家最重要的 3 個規則是什麼？","每個家庭成員用視覺形式貢獻其中一個規則。","把壁畫放在家裡的顯眼位置。"],tip:"讓孩子參與制定規則可以提高他們遵守規則的意願。"},
+    {title:"我的鏡子",mat:"紙張，彩色鉛筆",steps:["讓孩子在紙上畫一個鏡子的輪廓。","在鏡子裡，畫出別人如何看他。","在鏡子外，畫出他自己真正是什麼樣子。"],tip:"討論兩者的異同，不帶評判。"},
+    {title:"失誤的藝術",mat:"紙張，彩色鉛筆",steps:["故意讓孩子「犯錯誤」（灑顏色、畫歪線條）。","然後，讓那個「錯誤」成為藝術的一部分。","給那幅畫起一個標題。"],tip:"這教孩子靈活思維和接受不完美。"},
+    {title:"我的快樂藥方",mat:"紙張，彩色鉛筆",steps:["讓孩子設計「讓我快樂的藥方」。","藥方裡有哪些成分？各需要多少份量？","把藥方貼在孩子的房間裡。"],tip:"這幫助孩子識別自己的快樂來源。"},
+    {title:"共同的夢想",mat:"大張紙，彩色鉛筆",steps:["和孩子一起討論你們共同的家庭夢想。","每個人用視覺形式貢獻一部分。","把它放在家裡醒目的地方。"],tip:"強調這是「我們的」夢想，建立家庭凝聚力。"},
+    {title:"心情溫度計",mat:"紙張，彩色鉛筆",steps:["畫一個溫度計，從 1 到 10。","1 是「非常悲傷」，10 是「非常快樂」。","讓孩子每天標記今天的心情溫度。"],tip:"這是一個簡單的情感覺知工具。"},
+    {title:"第一件讓我微笑的事",mat:"紙張，彩色鉛筆",steps:["每天早晨，讓孩子快速畫出「今天讓我微笑的第一件事」。","可以是任何東西——麥片、陽光、媽媽的笑聲。","建立一個「微笑收藏」。"],tip:"培養注意正向事物的習慣。"},
+    {title:"我的勇氣地圖",mat:"紙張，彩色鉛筆",steps:["和孩子一起回憶他們曾經勇敢過的時刻。","把每個勇敢時刻畫成一個「地標」。","連接所有地標，形成一條「勇氣旅程」。"],tip:"這幫助孩子認識到他們已有的勇氣歷史。"},
+    {title:"我們的家",mat:"大張紙，彩色鉛筆",steps:["每個家庭成員各自畫出「我們的家」的感覺（不是外觀）。","分享各自的畫，不評判。","找到共同點和不同點。"],tip:"不同的感知是正常的，重要的是傾聽和理解。"}
+  ]},
+  {id:"teens",title:"青少年活動",icon:"🧑‍🎓",color:"#6B9ED4",bg:"linear-gradient(145deg,#4E4036,#6B9ED4)",age:"13–18 歲",desc:"這些活動幫助青少年探索身份認同、管理壓力、建立自尊，並在同儕壓力和期待中找到自己的聲音。",exercises:[
+    {title:"我的多張面孔",mat:"紙張，彩色鉛筆",steps:["在不同情境中，你是不同的人。","畫出你在學校、在家、和朋友在一起、和獨自一人時的面孔。","哪一個最像真正的你？"],tip:"尊重青少年的隱私——他們不必分享每個面孔的含義。"},
+    {title:"我的聲音",mat:"紙張，彩色鉛筆",steps:["你的聲音（你的觀點和意見）長什麼樣子？","畫出你的聲音——它的強度、顏色和形狀。","什麼讓你的聲音變小？什麼讓它變大？"],tip:"這幫助青少年認識到他們自己獨特的視角有價值。"},
+    {title:"壓力的顏色",mat:"紙張，彩色鉛筆",steps:["快速地，不思考，選一種顏色代表你現在的壓力。","以那種顏色填滿半張紙。","在另一半，畫出「沒有那個壓力的你」是什麼顏色。"],tip:"視覺化壓力可以讓它感覺更有邊界，更可管理。"},
+    {title:"同儕壓力地圖",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出你生活中「讓你成為更好的你」的影響。","用另一種顏色：畫出「讓你偏離自己」的影響。","哪種影響更多？"],tip:"不要評判哪種影響——只是觀察。"},
+    {title:"我的界限",mat:"紙張，彩色鉛筆",steps:["在頁面中央畫你自己。","以視覺形式畫出你的界限——什麼可以靠近你，什麼不行？","那個界限是透明的、堅固的，還是有時開有時關的？"],tip:"這幫助青少年認識健康界限的重要性。"},
+    {title:"未來的十個可能",mat:"紙張，彩色鉛筆",steps:["不是「你會成為什麼」，而是「你可能成為什麼」。","以視覺形式探索你生命的十個可能的方向。","這些方向有什麼共同點？"],tip:"聚焦在可能性，而不是決定。"},
+    {title:"我真正喜歡的東西",mat:"紙張，彩色鉛筆",steps:["不考慮「應該」喜歡什麼——只是你真正喜歡的東西。","以視覺形式呈現你的真正興趣和熱情。","是否有任何被社會或家庭期望壓制的興趣？"],tip:"這幫助青少年連結他們真正的自我。"},
+    {title:"我是誰，我不是誰",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出「我是」的東西。","用另一種顏色：畫出「我不是（儘管人們認為我是）」的東西。","看著兩者之間的差距。"],tip:"這幫助青少年認識到他們不必接受別人的標籤。"},
+    {title:"完美主義的代價",mat:"紙張，彩色鉛筆",steps:["對你來說，「完美」是什麼樣子的？","那種完美的追求有什麼代價？","以視覺形式呈現一個「足夠好」而不是「完美」的你。"],tip:"幫助青少年看到完美主義如何耗盡他們的能量。"},
+    {title:"創傷與韌性",mat:"紙張，彩色鉛筆",steps:["以視覺形式呈現你生命中一個「讓你變強」的困難時刻。","那個困難如何改變了你？","那個改變中有什麼力量或智慧？"],tip:"聚焦在韌性，而不是重新體驗創傷。"},
+    {title:"我的獨特性",mat:"紙張，彩色鉛筆",steps:["在頁面中央，畫出讓你「不同」的東西——那些使你獨特的部分。","那些部分是優勢還是讓你感到困擾？","重新框架：那些讓你與眾不同的東西是禮物，不是缺陷。"],tip:"幫助青少年看到獨特性的價值。"},
+    {title:"給未來自己的信",mat:"紙張，彩色鉛筆",steps:["以視覺形式，「寫」一封信給五年後的自己。","那個未來的你有什麼你想傳達的？","那個未來的你可能想對現在的你說什麼？"],tip:"五年的視角可以幫助青少年看到今天困境的短暫性。"},
+    {title:"我的夢想與期待的差距",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出你（或父母/社會）對你的期待。","用另一種顏色：畫出你自己的夢想。","那兩者之間的差距有多大？"],tip:"這是一個深入的探索——尊重青少年的揭示。"},
+    {title:"螢幕時間的影響",mat:"紙張，彩色鉛筆",steps:["思考你的螢幕時間（社交媒體、遊戲、影片）如何影響你的情感。","以視覺形式呈現積極和消極的影響。","有什麼你想改變的？"],tip:"不是評判螢幕時間——是幫助青少年有意識地選擇。"},
+    {title:"我的情感工具箱",mat:"紙張，彩色鉛筆",steps:["當你感到壓倒時，你有哪些應對工具？","以視覺形式呈現你的「情感工具箱」——每個工具代表一種應對策略。","你還想添加什麼工具？"],tip:"視覺化工具箱讓它在困難時刻更容易記住和使用。"},
+    {title:"我的原則清單",mat:"紙張，彩色鉛筆",steps:["思考你最核心的 3 個個人原則——什麼是真正重要的。","以視覺形式呈現那些原則。","你的日常行動是否符合那些原則？"],tip:"這幫助青少年從價值觀出發，而不只是從衝動出發。"},
+    {title:"當我感到憤怒",mat:"紙張，彩色鉛筆",steps:["以視覺形式：憤怒在你身體裡是什麼感覺？","憤怒的下面，通常還有另一種情感（傷害、恐懼、失望）。","那個「更深的情感」是什麼？"],tip:"幫助青少年理解憤怒通常是另一種情感的表面。"},
+    {title:"我的力量來源",mat:"紙張，彩色鉛筆",steps:["思考你生命中給你力量的東西（人、活動、地方、信念）。","以視覺形式呈現那些力量來源。","在困難時期，你是否連結到那些來源？"],tip:"這培養有意識地使用自己的支持資源。"},
+    {title:"成長的痛苦",mat:"紙張，彩色鉛筆",steps:["青春期是充滿「成長的痛苦」的時期。","以視覺形式呈現一個你正在成長的地方。","那個成長有哪些艱難的部分？有哪些美好的部分？"],tip:"幫助青少年看到困難是成長的一部分，而不是失敗。"},
+    {title:"我想被記住的方式",mat:"紙張，彩色鉛筆",steps:["思考：你想被你的朋友、家人和世界如何記住？","以視覺形式呈現那個「你的遺產」。","你今天的行動是否在建設那個遺產？"],tip:"這幫助青少年從更大的視角思考他們的選擇。"}
+  ]},
+  {id:"couples",title:"伴侶活動",icon:"💑",color:"#F3B8D2",bg:"linear-gradient(145deg,#4E4036,#D9C9F7,#F3B8D2)",age:"成年伴侶",desc:"這些活動幫助伴侶增進相互了解、改善溝通、深化情感連結，並一起創造共同的願景。",exercises:[
+    {title:"我們的顏色",mat:"大張紙，彩色鉛筆",steps:["每個人各自選一種顏色代表自己。","在同一張紙上，讓兩種顏色互動——交疊、相鄰、混合。","那個互動看起來像你們的關係嗎？"],tip:"不要試圖「正確」——讓過程自然發生。"},
+    {title:"我的伴侶眼中的我",mat:"紙張，彩色鉛筆",steps:["每個人各自畫出「我認為我的伴侶如何看我」。","分享後，每個伴侶說出他們實際上看到的。","找到感知和現實之間的差距。"],tip:"這通常會帶來溫暖的驚喜和深入的對話。"},
+    {title:"愛的語言地圖",mat:"紙張，彩色鉛筆",steps:["每個人各自畫出他們給予和接受愛的方式。","分享後，找到重疊和差距。","如何更好地用對方的語言給予愛？"],tip:"愛的語言：肯定的話語、優質時光、收到禮物、服務行為、身體接觸。"},
+    {title:"我們共同的夢想",mat:"大張紙，彩色鉛筆",steps:["各自畫出你們共同的夢想（不必先討論）。","比較兩幅畫——有什麼相似？有什麼不同？","一起創作第三幅「我們的共同夢想」。"],tip:"不同的願景是正常的——重要的是找到共同的核心。"},
+    {title:"我最感謝你的三件事",mat:"紙張，彩色鉛筆",steps:["各自以視覺形式，呈現你最感謝伴侶的三件事。","（不能是物質的）","分享後，大聲說出感謝。"],tip:"定期的感恩練習能顯著增強關係滿意度。"},
+    {title:"我們的衝突地圖",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出你們衝突時你的部分（你的感受、需求、恐懼）。","用另一種顏色：你認為你伴侶的部分是什麼？","比較後，更新你對伴侶的理解。"],tip:"衝突地圖幫助伴侶理解彼此的立場，不只是爭論。"},
+    {title:"我們需要的空間",mat:"大張紙，彩色鉛筆",steps:["在頁面中央畫你們作為伴侶的「我們」。","在周圍：每個人各自需要的個人空間是什麼？","如何在「我們」和「我」之間找到健康的平衡？"],tip:"健康的伴侶關係需要個人空間和共同空間。"},
+    {title:"給伴侶的視覺情書",mat:"紙張，彩色鉛筆",steps:["不用文字，只用視覺元素（顏色、形狀、象徵符號）「寫」一封情書。","展示時，讓對方解讀他們看到的，然後你解釋你的意圖。","驚喜和誤解都是美好的對話起點。"],tip:"視覺情書繞過了語言，觸達更深的情感層面。"},
+    {title:"我們的起點和未來",mat:"大張紙，彩色鉛筆",steps:["在左側：畫出你們在一起的「起點」——你們如何相遇，那時的感覺。","在右側：畫出你們希望的「未來」。","兩者之間：你們的「旅程線」是什麼樣的？"],tip:"回顧起點可以重新點燃感激和愛。"},
+    {title:"未說出的感受",mat:"紙張，彩色鉛筆",steps:["每個人各自畫出一個你從未對伴侶說過的感受（可以是正向的或需要說清楚的）。","準備好後，用「我」陳述分享那個感受（「我感到…當…」）。","傾聽時不評判、不防禦，只是接受。"],tip:"這需要信任和安全感——確保是在平靜的時候進行。"},
+    {title:"讓我笑的你",mat:"紙張，彩色鉛筆",steps:["回憶讓你笑或讓你充滿喜悅的伴侶的一個特質或行為。","以視覺形式呈現那個喜悅的記憶。","分享後，重新活出那個時刻。"],tip:"共同的笑聲是關係的黏合劑。"},
+    {title:"我對我們的恐懼",mat:"紙張，彩色鉛筆",steps:["每個人各自畫出你對這段關係的一個恐懼（失去、不被理解、改變）。","分享後，伴侶回應：「我聽到你說你害怕…我想讓你知道…」","不是解決問題，而是傾聽和安撫。"],tip:"表達恐懼需要脆弱——以善意接受是關鍵。"},
+    {title:"各自的力量",mat:"紙張，彩色鉛筆",steps:["各自畫出「我在這段關係中帶來的力量」。","分享後，伴侶添加他們看到的對方的力量。","一起看你們作為組合的力量。"],tip:"這培養相互欣賞和對彼此力量的認可。"},
+    {title:"我們的傷與修復",mat:"紙張，兩種不同顏色",steps:["用一種顏色：畫出你們關係中某個「傷痕」（衝突或誤解後留下的）。","用另一種顏色：畫出修復那個傷痕需要什麼。","準備好後，討論修復的可能。"],tip:"「傷痕」不是失敗——它是關係成長的機會。"},
+    {title:"親密的請求",mat:"紙張，彩色鉛筆",steps:["各自畫出你想從伴侶那裡得到「更多」的東西（不是物質的——可以是時間、傾聽、身體接觸）。","分享後，伴侶說：「我可以嘗試給你更多…」"],tip:"具體的請求比模糊的抱怨更有效。"},
+    {title:"我們的日常奇蹟",mat:"紙張，彩色鉛筆",steps:["回顧你們過去一週，找到一個「日常奇蹟」——一個被忽視的美好時刻。","各自以視覺形式呈現那個時刻。","分享後，對彼此表達感謝。"],tip:"注意日常小事可以防止關係的「理所當然」。"},
+    {title:"五年後的我們",mat:"大張紙，彩色鉛筆",steps:["各自畫出五年後你希望你們的關係是什麼樣子。","分享後，找到共同的願景元素。","一起創作「我們的五年願景」。"],tip:"共同的未來願景能增強關係的目的感。"},
+    {title:"我的伴侶最需要的",mat:"紙張，彩色鉛筆",steps:["思考：你的伴侶現在最需要什麼（不是物質的）？","以視覺形式呈現那個需求。","分享後，問伴侶：「我猜的對嗎？」"],tip:"嘗試理解伴侶的需求比假設正確更重要。"},
+    {title:"我們的共同語言",mat:"大張紙，彩色鉛筆",steps:["每個人各自畫出一個象徵符號，代表你們關係的核心。","分享後，一起創造「你們的共同語言符號」。","那個符號可以成為你們私下的信號和提醒。"],tip:"共同的象徵語言能增強伴侶的親密感和獨特性。"},
+    {title:"給我們的信",mat:"大張紙，彩色鉛筆",steps:["一起創作一封給你們的關係的信——用視覺符號和形狀。","那封信想說什麼關於你們一起走過的路？","把它放在你們都能看到的地方。"],tip:"這是一個深度的共同創作，需要信任和開放的心。"}
+  ]}
+];
+
+var C = document.getElementById('family-container');
+sections.forEach(function(S) {
+  var sh = document.createElement('div');
+  sh.className = 'page section-header';
+  sh.style.cssText = 'background:'+S.bg+';';
+  sh.innerHTML = '<div style="font-size:36pt;margin-bottom:16px;">'+S.icon+'</div>'
+    + '<h2 style="font-family:var(--ft);font-size:26pt;color:#fff;margin-bottom:8px;">'+S.title+'</h2>'
+    + '<p style="font-size:9pt;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;">'+S.age+'</p>'
+    + '<p style="font-size:11pt;color:rgba(255,255,255,.8);line-height:1.6;max-width:140mm;margin:0 auto;">'+S.desc+'</p>';
+  C.appendChild(sh);
+
+  S.exercises.forEach(function(ex, i) {
+    var pg = document.createElement('div');
+    pg.className = 'page ex-page';
+    var agebg = S.id==='kids' ? '#fde8c0' : S.id==='teens' ? '#d0e4f8' : '#f8d6e9';
+    var agecolor = S.id==='kids' ? '#7a5a10' : S.id==='teens' ? '#2a5a8a' : '#7a2a5a';
+    var agetext = S.id==='kids' ? '🧒 ' + S.age : S.id==='teens' ? '🧑‍🎓 ' + S.age : '💑 ' + S.age;
+    var stepbg = S.id==='kids' ? 'var(--gold)' : S.id==='teens' ? 'var(--blue)' : 'var(--lavd)';
+    var stepsHtml = ex.steps.map(function(s,si) {
+      return '<div class="ex-step"><div class="ex-step-n" style="background:'+stepbg+';">'+(si+1)+'</div><div class="ex-step p">'+s+'</div></div>';
+    }).join('');
+    pg.innerHTML = '<div class="ex-header"><span class="ex-topic" style="color:'+agecolor+';">'+S.icon+' '+S.title+'</span><span class="ex-num">'+S.id.charAt(0).toUpperCase()+S.id.slice(1)+' '+(i+1)+' / '+S.exercises.length+'</span></div>'
+      + '<div class="ex-title">'+ex.title+'</div>'
+      + '<div class="ex-age" style="background:'+agebg+';color:'+agecolor+';">'+agetext+'</div>'
+      + '<div class="ex-materials"><span>需要：</span>'+ex.mat+'</div>'
+      + '<div class="ex-steps">'+stepsHtml+'</div>'
+      + '<div class="ex-space"></div>'
+      + '<div class="ex-tip">💡 <strong>提示：</strong>'+ex.tip+'</div>';
+    C.appendChild(pg);
+  });
+});
+</script>
 </body>
 </html>

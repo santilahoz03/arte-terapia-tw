@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>解放日記 — 30 次練習</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@page { size: 210mm 297mm; margin: 0; }
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root { --bg:#FFF8F4;--lav:#D9C9F7;--lavd:#B89FE0;--pink:#F3B8D2;--gold:#C9A84C;--title:#4E4036;--body:#6F6258;--body2:#8A7A70;--ft:'Noto Serif TC',serif;--fb:'Noto Sans TC',sans-serif; }
+body { font-family:var(--fb); color:var(--body); background:var(--bg); }
+.page { width:210mm; min-height:297mm; position:relative; page-break-after:always; overflow:hidden; display:flex; flex-direction:column; }
+.cover { background:linear-gradient(145deg,#B89FE0 0%,#4E4036 50%,#F3B8D2 100%); align-items:center; justify-content:center; text-align:center; padding:36mm 20mm; }
+.cover-badge { display:inline-block; background:rgba(217,201,247,.25); border:1px solid var(--lav); color:var(--lav); font-size:9pt; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:5px 18px; border-radius:20px; margin-bottom:20px; }
+.cover h1 { font-family:var(--ft); font-size:30pt; color:#fff; line-height:1.2; margin-bottom:12px; }
+.cover p { font-size:11pt; color:rgba(255,255,255,.85); margin-bottom:24px; line-height:1.5; }
+.cover-pill { display:inline-block; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.35); color:#fff; padding:7px 20px; border-radius:24px; font-size:9pt; font-weight:600; margin:3px; }
+.guide-page { background:#fff; padding:16mm 18mm; }
+.guide-h2 { font-family:var(--ft); font-size:20pt; color:var(--title); margin-bottom:6mm; padding-bottom:4mm; border-bottom:2px solid var(--lav); }
+.guide-p { font-size:10pt; color:var(--body); line-height:1.65; margin-bottom:3mm; }
+.guide-ul { list-style:none; display:flex; flex-direction:column; gap:3mm; margin:4mm 0; }
+.guide-ul li { font-size:10pt; color:var(--body); line-height:1.5; padding-left:16px; position:relative; }
+.guide-ul li::before { content:"🔓"; position:absolute; left:0; font-size:8pt; top:2px; }
+.ex-page { background:#fff; padding:13mm 18mm; }
+.ex-top { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4mm; padding-bottom:3mm; border-bottom:2px solid var(--lav); }
+.ex-topic { font-size:8pt; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--lavd); }
+.ex-num { font-size:8pt; color:var(--body2); }
+.ex-title { font-family:var(--ft); font-size:17pt; color:var(--title); margin-bottom:3mm; line-height:1.3; }
+.ex-release { background:linear-gradient(135deg,#f0ebff,#f9e8f5); border-radius:8px; padding:8px 12px; margin-bottom:4mm; }
+.ex-release-label { font-size:8pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--lavd); margin-bottom:3px; }
+.ex-release p { font-size:10pt; color:var(--title); line-height:1.55; font-style:italic; }
+.ex-steps { display:flex; flex-direction:column; gap:2.5mm; margin-bottom:4mm; }
+.ex-step { display:flex; gap:8px; align-items:flex-start; }
+.ex-step-n { width:20px; height:20px; background:linear-gradient(135deg,var(--lavd),var(--pink)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:8pt; font-weight:700; color:#fff; flex-shrink:0; margin-top:1px; }
+.ex-step p { font-size:9.5pt; color:var(--body); line-height:1.5; }
+.ex-space { flex:1; border:1.5px dashed #d9c9f7; border-radius:8px; min-height:52mm; }
+.ex-after { margin-top:3mm; border-top:1px solid var(--lav); padding-top:3mm; font-size:9pt; color:var(--body2); font-style:italic; line-height:1.5; }
+@media print { .no-print { display:none!important; } }
+@media screen { body { background:#e0d8d0; padding:20px; } .page { margin:0 auto 20px; box-shadow:0 4px 20px rgba(0,0,0,.2); } .print-btn { position:fixed; bottom:24px; right:24px; background:var(--lavd); color:#fff; border:none; border-radius:50px; padding:14px 28px; font-size:14px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(184,159,224,.5); z-index:1000; } }
+</style>
+</head>
+<body>
+<button class="print-btn no-print" onclick="window.print()">🖨️ 列印 / 儲存 PDF</button>
+<div class="page cover">
+  <div class="cover-badge">🔓 加值方案 · OB</div>
+  <h1>解放日記</h1>
+  <p>30 次練習<br>釋放你不再需要攜帶的東西</p>
+  <div>
+    <span class="cover-pill">🔓 30 次練習</span>
+    <span class="cover-pill">💜 深度釋放</span>
+    <span class="cover-pill">🌸 內在自由</span>
+  </div>
+</div>
+<div class="page guide-page">
+  <div class="guide-h2">解放的藝術</div>
+  <p class="guide-p">解放日記的前提很簡單：我們都攜帶著不再服務我們的東西——過去的傷痕、舊信念、他人的批判、我們對自己的批判。這些練習幫助你有意識地釋放那些東西。</p>
+  <p class="guide-p">「釋放」不是遺忘或壓制。它是有意識地承認「這個曾經有其用處，但現在我可以選擇放下它」。</p>
+  <p class="guide-p" style="font-weight:600;color:var(--title);">這本日記的 30 個主題：</p>
+  <ul class="guide-ul">
+    <li>釋放過去的憤怒和怨恨</li>
+    <li>放下對完美的執著</li>
+    <li>釋放別人對你的批判</li>
+    <li>放下你對自己的批判</li>
+    <li>釋放過時的恐懼和限制信念</li>
+    <li>以及更多…</li>
+  </ul>
+  <p class="guide-p">每個練習的結構相同：一個釋放提示，一個藝術探索空間，和一個「釋放後的感受」問題。</p>
+</div>
+<div id="release-container"></div>
+<script>
+var exs = [
+  {title:"釋放完美主義",release:"我釋放認為「我必須做得完美才有價值」的信念。",steps:["畫出你的「完美主義」——它是什麼形狀和顏色？","問它：「你給了我什麼？你取走了什麼？」","用一個象徵性的動作，在畫上「釋放」那個完美主義（也許是一隻手鬆開的圖像）。"],after:"釋放後，你感覺怎樣？更輕了還是有抵抗感？"},
+  {title:"釋放別人的批判",release:"我釋放那些我不再需要攜帶的批判性聲音。",steps:["想想一個曾經傷害你的批判（你可以不公開是誰說的）。","以視覺形式呈現那個批判——給它一個形狀和顏色。","以視覺形式，讓那個批判「飛走」或「融化」。"],after:"那個批判是別人的話，還是已經成為你自己的聲音？"},
+  {title:"釋放自我批判",release:"我釋放我對自己最嚴苛的批判。",steps:["你最常批判自己什麼？（外貌、能力、過去的決定？）","以視覺形式，呈現那個批判。","問那個批判：「你最初是為了保護我什麼？」然後以視覺形式感謝它，並讓它走。"],after:"用你對一個朋友說話的方式對自己說話，感覺如何？"},
+  {title:"釋放過去的傷",release:"我承認這個傷，並選擇不讓它繼續定義我的現在。",steps:["選擇一個過去的傷（你不必在這裡揭露細節）。","以視覺形式，讓那個傷有一個形式——也許是一個結，一個烙印，一道傷口。","現在，以視覺形式，開始（僅僅開始）那個傷的愈合過程。"],after:"愈合不代表遺忘。你的傷今天仍在影響你什麼？"},
+  {title:"釋放憤怒",release:"我承認這個憤怒，並選擇不讓它成為我的監獄。",steps:["想想一個你還帶著憤怒的情況。","以最有力的線條和顏色，讓憤怒在紙上釋放。","當憤怒之下，是什麼傷或失望？以視覺形式探索。"],after:"憤怒和受傷有什麼不同？"},
+  {title:"釋放比較",release:"我釋放用別人的尺子衡量自己的習慣。",steps:["你最常和誰比較自己？以視覺形式（不用名字）呈現那個比較。","那個比較的假設是什麼（他們有的我沒有）？","以視覺形式，擦去那個比較，畫出你自己的尺子。"],after:"如果你只和「昨天的自己」比較，你今天的進步是什麼？"},
+  {title:"釋放失敗感",release:"我釋放把失敗視為自己不夠好的證明的信念。",steps:["回憶一個讓你感到「失敗」的時刻。","以視覺形式，呈現那個「失敗」的一個意外的禮物或學習。","重新框架：「我失敗了」→「我嘗試了，我學到了」。"],after:"如果失敗是學習的必要組成部分，你如何看待你的「失敗」歷史？"},
+  {title:"釋放控制的需要",release:"我釋放認為「我必須控制一切才能安全」的信念。",steps:["你在生活中試圖控制什麼？以視覺形式呈現。","在控制的需求背後，有什麼恐懼？","以視覺形式，練習「放手」——什麼感覺？"],after:"放手是不負責任，還是一種不同形式的信任？"},
+  {title:"釋放虧欠感",release:"我釋放認為「我欠別人一個完美的自己」的信念。",steps:["你在哪些關係中感到虧欠或不夠好？","那種虧欠感是什麼顏色和重量？","問自己：「我真正欠那個人什麼？還是這是我強加給自己的？」"],after:"健康的責任感和不健康的虧欠感有什麼區別？"},
+  {title:"釋放過去的決定",release:"我釋放對我曾做過的決定的後悔和評判。",steps:["想一個你後悔的決定（大或小）。","以視覺形式：用當時你所知道的，你做了最好的決定。","現在，以視覺形式，「赦免」那個做了那個決定的你。"],after:"如果那個決定讓你成為今天的你，它的角色是什麼？"},
+  {title:"釋放別人的期待",release:"我釋放認為我必須滿足所有人的期待的信念。",steps:["誰的期待對你壓力最大？（家庭、伴侶、社會？）","以視覺形式，呈現那些期待——它們的重量和形狀。","以視覺形式，把那些期待還給它們的來源，接回你自己的期待。"],after:"你對自己的期待是什麼？（和別人的期待分開）"},
+  {title:"釋放「不夠好」的感覺",release:"我釋放「我天生就不夠好」這個謊言。",steps:["那個「不夠好」的感覺是從哪裡來的？（也許是一個早期的經歷或聲音）","以視覺形式，讓那個「不夠好」的信念存在，然後問：「這是事實，還是別人傳遞給我的信念？」","以視覺形式，畫出「如果我是夠好的」看起來是什麼樣子。"],after:"「夠好」是一個固定的狀態，還是一個正在進行的過程？"},
+  {title:"釋放孤獨中的羞恥",release:"我釋放圍繞著我的孤獨感的羞恥。",steps:["孤獨通常帶著羞恥感（「我應該有更多朋友/更多連結」）。","以視覺形式，分開孤獨本身（那種感覺）和對孤獨的羞恥。","以視覺形式，對孤獨的部分給予慈悲，而不是評判。"],after:"每個人都會有時感到孤獨——這讓你的孤獨感覺如何？"},
+  {title:"釋放身體評判",release:"我釋放對自己身體的嚴苛批判，轉向感恩。",steps:["你最常批判自己身體的哪個部分？","以視覺形式，畫出你的身體輪廓，把那個被批判的部分標出來。","以視覺形式，轉移焦點：那個部分是如何服務你的（功能，而不是外貌）？"],after:"你的身體功能比外貌更重要——這個觀點改變你的感受嗎？"},
+  {title:"釋放「我不值得」的信念",release:"我釋放「我不值得被愛、被幸福、被成功」的信念。",steps:["你在哪些方面感到自己「不值得」？以視覺形式呈現。","那個「不值得」是什麼時候開始的？有沒有一個特定的起源？","以視覺形式，駁斥那個信念：用真實的例子證明你是值得的。"],after:"「值得」是掙來的，還是天生的？"},
+  {title:"釋放過去的關係創傷",release:"我承認這個傷，並選擇不讓它成為我所有關係的過濾器。",steps:["在一段重要的過去關係中，你受到了什麼傷？","那個傷如何影響你今天的關係（你帶著什麼信念？）","以視覺形式，開始識別「那個關係的影響」和「這段關係的現實」之間的差異。"],after:"你如何帶著過去的傷，同時不讓它佔領你的現在？"},
+  {title:"釋放「我沒有時間」的藉口",release:"我釋放用忙碌作為逃避自我照顧的藉口。",steps:["你用「沒有時間」迴避什麼？以視覺形式呈現那個「沒時間」背後的真相。","那個迴避是關於時間，還是關於優先順序？","以視覺形式，創造一個簡單的「15 分鐘給自己」的例程。"],after:"每天 15 分鐘給自己，對你來說感覺容易還是困難？為什麼？"},
+  {title:"釋放沉默",release:"我釋放用沉默掩蓋我真正感受和需求的習慣。",steps:["你通常在哪些情況下保持沉默，而不是說出你的感受或需求？","那個沉默保護了什麼？（和平？關係？自己的形象？）","以視覺形式，練習「說出來」——用一個象徵性的發聲。"],after:"在哪一個關係或情況中，你最需要說出你的聲音？"},
+  {title:"釋放過去的「我」",release:"我釋放已不再符合我的過時的自我形象和標籤。",steps:["別人（或你自己）對你有哪些標籤，雖然曾經有些真實，但你已經長大超越了？","以視覺形式，把那些舊標籤放下。","以視覺形式，創造一個更新的、更真實的「我的標籤」。"],after:"你是否一直在用過時的眼光看自己？"},
+  {title:"釋放毒性的負罪感",release:"我釋放那些不健康的負罪感，同時保留真正需要承擔的責任。",steps:["你帶著什麼負罪感？（有些是合理的，有些是不合理的）","以視覺形式，分類：哪些是真正的責任？哪些是毒性的負罪感？","以視覺形式，讓毒性的負罪感「蒸發」，同時誠實地面對真正的責任。"],after:"責任是修復，負罪感是折磨。有什麼區別？"},
+  {title:"釋放「當……我才會幸福」",release:"我釋放把幸福推遲到某個條件的習慣。",steps:["你生命中有哪些「當我有了X，我才會幸福」的信念？","以視覺形式呈現那些信念。","以視覺形式，找到今天，就是現在，可以存在的一小份幸福。"],after:"把幸福推遲到未來，剝奪了你生命中的什麼？"},
+  {title:"釋放有毒的憤怒",release:"我釋放已經毒害了我太久的舊憤怒。",steps:["你有沒有帶著一個很久的憤怒？（對一個人，一個情況，或生命本身？）","以視覺形式，讓那個憤怒完全展開——讓它有空間。","問：「繼續帶著這個憤怒，代價是什麼？放下它，代價是什麼？」"],after:"放下憤怒不是說對方是對的——它是給你自己自由。"},
+  {title:"釋放遺憾",release:"我承認我的遺憾，並選擇從中學習而不是被它囚禁。",steps:["你有什麼遺憾——已做或未做的事？","以視覺形式，不帶評判地，讓那個遺憾存在。","以視覺形式，從那個遺憾中找到一個智慧或學習。"],after:"如果你可以對「帶著遺憾的你」說一句話，你會說什麼？"},
+  {title:"釋放失落",release:"我承認這個失落，並允許自己哀悼，同時繼續生活。",steps:["你生命中有什麼失落——人、機會、夢想、過去的自己？","以視覺形式，哀悼那個失落——讓它有尊嚴地存在。","以視覺形式，找到失落之後留下的空間——那個空間可以容納什麼？"],after:"哀悼不是軟弱——它是誠實地承認「這對我很重要」。"},
+  {title:"釋放「我一個人撐」",release:"我釋放認為「我必須獨自承擔一切」的信念。",steps:["你在哪些方面獨自承擔本可以尋求支持的東西？","那個「獨自撐」的背後，有什麼信念（不能示弱、不想成為負擔）？","以視覺形式，練習「伸出手」——尋求幫助是什麼感覺？"],after:"接受幫助是力量還是軟弱？"},
+  {title:"釋放「這就是我的天性」",release:"我釋放用「這就是我」作為不成長的藉口。",steps:["你有哪些行為模式或特質，你一直說「這就是我」，但其實你想改變？","那個模式是天性，還是一個習得的習慣？","以視覺形式，想象那個模式改變後的你——可能嗎？"],after:"改變不是背叛自己——它可能是更完整地做自己。"},
+  {title:"釋放過度道歉",release:"我釋放過度道歉和縮小自己的習慣。",steps:["你是否常常為了不必道歉的事情道歉（佔空間、有需求、說「不」）？","那個過度道歉的習慣從哪裡來？","以視覺形式，練習「不道歉地佔有你的空間」。"],after:"「對不起」和「謝謝你的耐心」有什麼不同？"},
+  {title:"釋放「我不配好事」",release:"我釋放認為好事只「發生在別人身上」的信念。",steps:["你是否有過「這種好事不可能發生在我身上」的感覺？以視覺形式呈現。","那個信念從哪裡來？是你自己的經歷，還是別人的信息？","以視覺形式，允許自己期待好事。"],after:"「期待好事」是天真，還是積極心態？"},
+  {title:"釋放「我沒有能力」",release:"我釋放把自己的能力縮小的習慣。",steps:["你在哪些方面低估了自己的能力？以視覺形式呈現。","回想一個你超越自己預期的時刻。","以視覺形式，擴大你對自己能力的認知。"],after:"「我不能」有多少次其實是「我不確定」或「我害怕失敗」？"},
+  {title:"釋放「我不可愛」",release:"我釋放認為「我天生就是不可愛的」的謊言。",steps:["那個「我不可愛」的感覺從哪裡來？（一個特定的記憶或聲音？）","以視覺形式，對那個部分給予慈悲。","以視覺形式，讓那個部分感受到被愛和被接受。"],after:"你是否能以對待你最好朋友的方式對待自己？"},
+  {title:"我的解放宣言",release:"今天，我選擇從所有我在這 30 天中釋放的東西中解放出來。",steps:["回顧這 30 天。選擇你最重要的三個釋放。","以視覺形式，創作你的「解放宣言」——你是誰，沒有那些你釋放的東西。","給這幅宣言充滿力量、尊嚴和自由的感覺。"],after:"30 天後的你和開始時的你有什麼不同？"}
+];
+var C = document.getElementById('release-container');
+exs.forEach(function(ex, i) {
+  var pg = document.createElement('div');
+  pg.className = 'page ex-page';
+  var stepsHtml = ex.steps.map(function(s, si) {
+    return '<div class="ex-step"><div class="ex-step-n">'+(si+1)+'</div><p>'+s+'</p></div>';
+  }).join('');
+  pg.innerHTML = '<div class="ex-top"><span class="ex-topic">🔓 解放日記</span><span class="ex-num">第 '+(i+1)+' 次 / 30</span></div>'
+    + '<div class="ex-title">'+ex.title+'</div>'
+    + '<div class="ex-release"><div class="ex-release-label">🌸 今日釋放宣言</div><p>'+ex.release+'</p></div>'
+    + '<div class="ex-steps">'+stepsHtml+'</div>'
+    + '<div class="ex-space"></div>'
+    + '<div class="ex-after">💭 <strong>釋放後：</strong>'+ex.after+'</div>';
+  C.appendChild(pg);
+});
+</script>
+</body>
+</html>
